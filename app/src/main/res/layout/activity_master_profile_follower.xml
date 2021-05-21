@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/follower_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/darkerBackground"
+    tools:context=".ui.activities.MasterProfileFollowerActivity">
+
+    <RelativeLayout
+        android:id="@+id/masterprofilefollower_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/darkerBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/user_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:strokeColor="?attr/almondBorder"
+            app:strokeWidth="1dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/backgroundColour">
+
+                <ImageView
+                    android:id="@+id/single_tag_slide"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/slide_right"
+                    app:tint="?attr/almondBorder" />
+
+                <TextView
+                    android:id="@+id/single_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="46dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="0dp"
+                    android:layout_toEndOf="@+id/single_tag_slide"
+                    android:fontFamily="@font/aldrich"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/name"
+                    android:textColor="?attr/tintColour"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/follower_bottom_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_card"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:background="?attr/darkerBackground"
+            app:tabIndicatorColor="?attr/almondBorder"
+            app:tabInlineLabel="true"
+            app:tabRippleColor="@color/colorAlmondLight"
+            app:tabSelectedTextColor="?attr/almondBorder"
+            app:tabTextColor="?attr/textColour" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewFollowerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/follower_bottom_app_bar"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:background="?attr/darkerBackground" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_s_tag"
+        android:menuCategory="system"
+        android:title="@string/search_hastags"
+        android:icon="@drawable/circle_tag"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/nav_s_account"
+        android:menuCategory="system"
+        android:icon="@drawable/ic_account_circle"
+        android:title="@string/search_accounts"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/nav_s_places"
+        android:menuCategory="system"
+        android:title="@string/search_places"
+        android:icon="@drawable/icons_location"
+        app:showAsAction="always" />
+</menu>

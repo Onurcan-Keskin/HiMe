@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_gallery"
+        android:icon="@drawable/ic_gallery"
+        android:menuCategory="system"
+        android:title="@string/card_gallery"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/nav_events"
+        android:icon="@drawable/events"
+        android:menuCategory="system"
+        android:title="@string/nav_events"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/nav_places"
+        android:icon="@drawable/icons_location"
+        android:menuCategory="system"
+        android:title="@string/nav_travel"
+        app:showAsAction="ifRoom" />
+
+</menu>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/hybridCardRelative"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/single_hybrid_imageCard"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/single_card_pagination"
+        android:layout_margin="@dimen/tag_card_margin"
+        app:cardCornerRadius="@dimen/tag_card_radius"
+        app:cardElevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/countryspinner"
+                android:contentDescription="@string/nav_map"
+                android:elevation="5dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_gallery"
+                app:tint="@color/colorAlmondLight" />
+
+            <ImageView
+                android:id="@+id/single_hybrid_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/image"
+                android:scaleType="centerCrop" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/single_hybrid_mapCard"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/single_card_pagination"
+        android:layout_margin="@dimen/tag_card_margin"
+        app:cardCornerRadius="@dimen/tag_card_radius"
+        app:cardElevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/countryspinner"
+                android:contentDescription="@string/nav_map"
+                android:elevation="5dp"
+                android:padding="3dp"
+                android:src="@drawable/ic_current_location"
+                app:tint="@color/colorAlmondLight" />
+
+            <ImageView
+                android:id="@+id/single_hybrid_mapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/image"
+                android:scaleType="centerCrop" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/single_hybrid_videoCard"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/single_card_pagination"
+        android:layout_margin="@dimen/tag_card_margin"
+        app:cardCornerRadius="@dimen/tag_card_radius"
+        app:cardElevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/countryspinner"
+                android:contentDescription="@string/video"
+                android:elevation="5dp"
+                android:src="@drawable/ic_play"
+                app:tint="@color/colorAlmondLight" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true">
+
+                <com.klinker.android.simple_videoview.SimpleVideoView
+                    android:id="@+id/single_hybrid_videoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:loop="true"
+                    app:muted="true"
+                    app:showSpinner="false"
+                    app:stopSystemAudio="false" />
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/single_hybrid_eventCard"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/single_card_pagination"
+        android:layout_margin="@dimen/tag_card_margin"
+        app:cardCornerRadius="@dimen/tag_card_radius"
+        app:cardElevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/countryspinner"
+                android:contentDescription="@string/video"
+                android:elevation="5dp"
+                android:padding="1dp"
+                android:src="@drawable/events"
+                app:tint="@color/colorAlmondLight" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/single_hybrid_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                android:id="@+id/events_dots"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                card_view:dotsColor="?attr/almondBorder"
+                card_view:dotsCornerRadius="3dp"
+                card_view:dotsSize="3dp"
+                android:visibility="gone"
+                card_view:progressMode="true"
+                card_view:selectedDotColor="?attr/almondPurple" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

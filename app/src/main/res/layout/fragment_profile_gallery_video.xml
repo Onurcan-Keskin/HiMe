@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColour"
+    tools:context=".profile.profilegallery.profilegalleryvideo.ProfileGVideoFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/profile_g_vid_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/darkerBackground"
+        tools:listitem="@layout/single_post_card_video"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/profile_g_vid_lottie_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:weightSum="1">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight=".1"
+            android:gravity="center"
+            android:text="@string/error_no_data_found"
+            android:textColor="@color/colorRightBubble"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/profile_g_vid_lottie"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight=".9"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/empty_field_lottie" />
+
+    </LinearLayout>
+
+</FrameLayout>

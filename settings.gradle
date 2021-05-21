@@ -1,0 +1,2 @@
+rootProject.name='HiMe'
+include ':app', ':heresdk-lite-android-4.2.0.0.1296', ':libbambuser-0.9.20', ':caaskitlite-1.0.0.000', ':streamaxia-opensdk', ':streamaxialib-release'

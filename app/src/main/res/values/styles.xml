@@ -1,0 +1,153 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorBlack</item>
+        <item name="colorPrimaryDark">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+    <!-- Light Mode -->
+    <style name="LightMode" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/midnight</item>
+        <item name="colorPrimaryDark">@color/midnight</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundColour">@color/backgroundLight</item>
+        <item name="darkerBackground">@color/darkerBackground_Light</item>
+        <item name="foregroundColour">@color/white</item>
+        <item name="cardBackgroundColour">@color/colorLight</item>
+        <item name="cardForeGroundColour">@color/transparent</item>
+        <item name="textColour">@color/lightText</item>
+        <item name="tintColour">@color/colorPrimary</item>
+        <item name="tintPurple">@color/colorPurple</item>
+        <item name="tintGlitter">@color/colorNavActiv</item>
+        <item name="borderColor">@color/colorRightBubble</item>
+        <item name="tintRevers">@color/white</item>
+        <item name="senderColor">@color/white</item>
+        <item name="receiveColor">@color/white</item>
+        <item name="almondBorder">@color/colorAlmondDark</item>
+        <item name="almondPurple">@color/colorPurple</item>
+        <item name="bottomText">@color/colorPureWhite</item>
+        <item name="bottomLine">@color/colorPureWhite</item>
+        <item name="content_fade">@color/content_fade_light</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+    <style name="material" parent="Theme.MaterialComponents" />
+    <!-- Dark Mode -->
+    <style name="DarkMode" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/midnight</item>
+        <item name="colorPrimaryDark">@color/midnight</item>
+        <item name="colorAccent">@color/colorBlueDark</item>
+        <item name="backgroundColour">@color/backgroundPrimary</item>
+        <item name="darkerBackground">@color/colorBlack</item>
+        <item name="foregroundColour">@color/foregroundDark</item>
+        <item name="cardBackgroundColour">@color/colorRedFade</item>
+        <item name="cardForeGroundColour">@color/transparent</item>
+        <item name="textColour">@color/colorLightAsh</item>
+        <item name="tintColour">@color/colorPureWhite</item>
+        <item name="tintPurple">@color/colorWhite</item>
+        <item name="tintRevers">@color/colorBlack</item>
+        <item name="tintGlitter">@color/white</item>
+        <item name="borderColor">@color/white</item>
+        <item name="senderColor">@color/colorSenderDark</item>
+        <item name="receiveColor">@color/colorReceiveDark</item>
+        <item name="almondBorder">@color/colorAlmondLight</item>
+        <item name="almondPurple">@color/colorAlmondDark</item>
+        <item name="bottomText">@color/colorAlmondLight</item>
+        <item name="bottomLine">@color/colorAlmondDark</item>
+        <item name="content_fade">@color/content_fade_dark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+    <style name="BlurTheme" parent="android:style/Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="AppTheme.PopupMenuItem">
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:background">@drawable/rect_selector</item>
+    </style>
+
+    <style name="AppTheme.SlidrActivityTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="DialogSlide">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="HiMe.Dialog.Fullscreen" parent="Theme.AppCompat.Light.DialogWhenLarge">
+        <item name="android:windowAnimationStyle">@style/Animation.Design.BottomSheetDialog</item>
+    </style>
+
+    <style name="HiMe.Dialog.Fullscreen.NoTitle">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomMediumShapeAppearance">
+        <item name="android:bottomLeftRadius">5dp</item>
+        <item name="android:bottomRightRadius">5dp</item>
+    </style>
+
+    <style name="ImagePickerTheme" parent="ef_BaseTheme">
+        <item name="colorPrimary">@color/midnight</item>
+        <item name="colorPrimaryDark">@color/colorBlack</item>
+        <item name="colorAccent">@color/ef_colorAccent</item>
+    </style>
+
+    <style name="HiMe.Theme.Board" parent="HiMe.Dialog.Fullscreen.NoTitle">
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+
+    <style name="bar_item1" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:buttonTint">@color/colorNavMap</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Dark" />
+
+    <style name="DarkMode.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="DarkMode.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+
+    <style name="DarkMode.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Dark" />
+
+    <style name="LightMode.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="LightMode.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+
+    <style name="LightMode.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Dark" />
+
+    <style name="CalendarToolbarTheme" parent="ThemeOverlay.MaterialComponents.Dark">
+        <item name="colorControlNormal">@color/colorGray</item>
+    </style>
+
+</resources>

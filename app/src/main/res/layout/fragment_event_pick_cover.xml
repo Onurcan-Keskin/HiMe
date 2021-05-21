@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.EventPickCoverFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/coverAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/darkerBackground"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/coverToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/darkerBackground"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/CalendarToolbarTheme"
+            app:titleTextColor="?attr/almondBorder" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/coverPick"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="?attr/foregroundColour"
+            android:layout_above="@id/pick_save_btn"
+            android:contentDescription="@string/coverphoto" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pick_save_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ic_rectangle_almond"
+            android:fontFamily="@font/aldrich"
+            android:text="@string/pick_photo"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+    <uses-permission android:name="com.huawei.permission.SECURITY_DIAGNOSE" />
+
+    <application
+        android:name="main.HiMeApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo_curved"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logo_curved"
+        android:supportsRtl="true"
+        android:theme="@style/LightMode"
+        tools:ignore="AllowBackup"
+        tools:node="merge">
+
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="appid=101817917" />
+
+        <meta-data
+            android:name="com.huawei.hms.ml.DEPENDENCY"
+            android:value= "langdetect"/>
+
+        <meta-data
+            android:name="com.huawei.hms.ml.DEPENDENCY"
+            android:value= "translate"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/colorBlack"
+    tools:context=".ui.activities.BigPlayerActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="@color/colorBlack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/bp_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/bp_poster_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_hexagon"
+                android:backgroundTint="@color/colorAlmondLight"
+                android:padding="7dp"
+                android:src="@drawable/splachback"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="1dp" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/bp_poster"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/name"
+                    android:textColor="@color/colorRightBubble"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bp_post_followers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bp_poster"
+                    android:layout_toStartOf="@id/post_f"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:gravity="center"
+                    android:text="@string/zero"
+                    android:textColor="@color/colorAlmondLight"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/post_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bp_poster"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/Follower"
+                    android:textColor="?attr/textColour"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/bp_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:background="@color/transparent"
+                android:clickable="true"
+                android:contentDescription="@string/image"
+                android:focusable="true"
+                android:foreground="@drawable/round_selector_purple"
+                android:src="@drawable/ic_threedots_vertical"
+                android:tint="@color/grey"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/bp_ui_controller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bp_banner"
+            android:animateLayoutChanges="true">
+
+            <ImageView
+                android:id="@+id/bp_visibility_controller"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="5dp"
+                android:clickable="true"
+                android:contentDescription="@string/views"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_post_hide"
+                app:tint="@color/colorAlmondLight" />
+
+            <ImageView
+                android:id="@+id/bp_message"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="23dp"
+                android:layout_toStartOf="@+id/bp_visibility_controller"
+                android:clickable="true"
+                android:contentDescription="@string/message"
+                android:focusable="true"
+                android:visibility="invisible"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_send_message"
+                app:tint="@color/colorAlmondLight" />
+
+            <TextView
+                android:id="@+id/bp_popularity"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="@string/zero"
+                android:textColor="@color/colorAlmondLight" />
+
+            <TextView
+                android:id="@+id/bp_popviews"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/bp_popularity"
+                android:text="@string/views"
+                android:textColor="?attr/textColour"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/bp_bigplayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="15dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/bp_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/map_layout"
+            layout="@layout/layout_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/bp_eventPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+            android:id="@+id/events_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            card_view:dotsColor="?attr/almondBorder"
+            card_view:dotsCornerRadius="12dp"
+            card_view:dotsSize="10dp"
+            card_view:dotsWidthFactor="2.5"
+            card_view:progressMode="true"
+            card_view:selectedDotColor="?attr/almondPurple" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/foregroundColour"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/single_user_img"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/ic_hexagon_purple"
+            android:padding="15dp"
+            android:src="@drawable/splachback"
+            app:civ_border_color="@android:color/white"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/single_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/single_user_img"
+            android:textColor="?attr/tintColour"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/single_user_age_ic"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@+id/single_user_name"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/single_user_img"
+            android:contentDescription="@string/image"
+            android:src="@drawable/ic_birthday_cake"
+            android:tint="?attr/tintPurple" />
+
+        <TextView
+            android:id="@+id/single_user_age"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_below="@id/single_user_name"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/single_user_age_ic"
+            android:gravity="center"
+            android:textColor="?attr/textColour"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/single_user_lvly_ic"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/single_user_age"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/single_user_img"
+            android:contentDescription="@string/image"
+            android:src="@drawable/ic_lovelyicon"
+            android:tint="?attr/tintPurple" />
+
+        <TextView
+            android:id="@+id/single_user_lovely"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_below="@id/single_user_age"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/single_user_lvly_ic"
+            android:gravity="center"
+            android:textColor="?attr/textColour"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/single_user_follower_ic"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/single_user_lvly_ic"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/single_user_img"
+            android:contentDescription="@string/image"
+            android:src="@drawable/ic_followers"
+            android:tint="?attr/tintColour" />
+
+        <TextView
+            android:id="@+id/single_user_follower"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_below="@id/single_user_lovely"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/single_user_lvly_ic"
+            android:gravity="center"
+            android:textColor="?attr/textColour"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/single_user_follow_lyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/single_user_follower_ic"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="0dp"
+            android:layout_toStartOf="@+id/single_user_discard"
+            android:layout_toEndOf="@id/single_user_img"
+            android:background="@drawable/ic_rectangle_purple"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:text="@string/follow"
+            android:textColor="@color/colorPureWhite"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/single_user_discard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/single_view"
+            android:layout_below="@+id/single_user_follower"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/transparent"
+            android:clickable="true"
+            android:contentDescription="@string/image"
+            android:focusable="true"
+            android:foreground="@drawable/round_selector_purple"
+            android:src="@drawable/ic_x"
+            android:tint="?attr/tintColour" />
+
+        <View
+            android:id="@+id/single_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/single_user_follow_lyt"
+            android:layout_marginTop="6dp"
+            android:background="@color/transparent" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

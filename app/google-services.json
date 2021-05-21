@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "199002425979",
+    "firebase_url": "https://hime-3518e.firebaseio.com",
+    "project_id": "hime-3518e",
+    "storage_bucket": "hime-3518e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199002425979:android:2671bc2b636de1cf56b0de",
+        "android_client_info": {
+          "package_name": "com.huawei.hime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "199002425979-j73jggqtgigllgh1s17lsa8tlg4tc6oh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.huawei.hime",
+            "certificate_hash": "e11e386f97941b3fdee58bb17bd8b64e41f93288"
+          }
+        },
+        {
+          "client_id": "199002425979-606amb9aki7kgdl7bhm5vnkqesofdmgo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD526LQ9qC5sIFi46SHA-VHSUybE06HthU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "199002425979-606amb9aki7kgdl7bhm5vnkqesofdmgo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

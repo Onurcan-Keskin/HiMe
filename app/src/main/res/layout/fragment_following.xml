@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/darkerBackground"
+    android:orientation="vertical"
+    tools:context=".masterfollowers.masterU.following.FollowingFragment">
+
+    <EditText
+        android:id="@+id/following_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/search"
+        android:background="?attr/darkerBackground"
+        android:drawableStart="@drawable/ic_search"
+        android:drawableTint="?attr/almondBorder"
+        android:fontFamily="@font/aldrich"
+        android:hint="@string/search"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="3dp"
+        android:textColor="?attr/tintColour"
+        android:textColorHint="?attr/almondBorder" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="3dp"
+        android:background="?attr/almondBorder" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/masterFollowingRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/darkerBackground"
+        android:visibility="visible"
+        tools:listitem="@layout/single_master_followers" />
+
+    <LinearLayout
+        android:id="@+id/follow_video_lottie_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:weightSum="1">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight=".1"
+            android:gravity="center"
+            android:text="@string/you_are_following_no_one"
+            android:textColor="@color/colorRightBubble"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/follow_video_lottie"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight=".9"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/empty_field_lottie" />
+
+    </LinearLayout>
+
+</LinearLayout>

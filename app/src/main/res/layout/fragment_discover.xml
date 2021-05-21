@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".discover.DiscoverFragment"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/discover_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/darkerBackground"
+        tools:listitem="@layout/single_posted_card" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

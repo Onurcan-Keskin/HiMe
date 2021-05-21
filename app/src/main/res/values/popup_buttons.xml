@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="icons_photo">
+        <item>@drawable/ic_post_to</item>
+        <item>@drawable/ic_account_circle</item>
+        <item>@drawable/ic_edit_24dp</item>
+        <item>@drawable/ic_post_delete</item>
+        <item>@drawable/ic_commentability</item>
+        <item>@drawable/ic_post_show</item>
+    </array>
+    <array name="colors_photo">
+        <item>@android:color/holo_blue_light</item>
+        <item>@color/colorAccount</item>
+        <item>@color/colorPurpleLight</item>
+        <item>@color/colorRightBubble</item>
+        <item>@color/colorNavVid</item>
+        <item>@color/colorLeftBubble</item>
+    </array>
+
+    <array name="icons_map">
+        <item>@drawable/ic_post_to</item>
+        <item>@drawable/ic_current_location</item>
+        <item>@drawable/ic_edit_24dp</item>
+        <item>@drawable/ic_post_delete</item>
+        <item>@drawable/ic_commentability</item>
+        <item>@drawable/ic_post_show</item>
+    </array>
+    <array name="colors_map">
+        <item>@android:color/holo_blue_light</item>
+        <item>@color/colorNavMap</item>
+        <item>@color/colorPurpleLight</item>
+        <item>@color/colorRightBubble</item>
+        <item>@color/colorNavVid</item>
+        <item>@color/colorLeftBubble</item>
+    </array>
+
+    <array name="icons_video">
+        <item>@drawable/ic_post_to</item>
+        <item>@drawable/ic_edit_24dp</item>
+        <item>@drawable/ic_post_delete</item>
+        <item>@drawable/ic_commentability</item>
+        <item>@drawable/ic_post_show</item>
+    </array>
+    <array name="colors_video">
+        <item>@android:color/holo_blue_light</item>
+        <item>@color/colorPurpleLight</item>
+        <item>@color/colorRightBubble</item>
+        <item>@color/colorNavVid</item>
+        <item>@color/colorLeftBubble</item>
+    </array>
+
+    <array name="icons_event_gallery">
+        <item>@drawable/ic_photo</item>
+        <item>@drawable/ic_gallery</item>
+        <item>@drawable/ic_cover_poster</item>
+    </array>
+    <array name="colors_event_gallery">
+        <item>@color/colorPurpleLight</item>
+        <item>@color/colorLeftBubble</item>
+        <item>@color/colorNavVid</item>
+    </array>
+</resources>

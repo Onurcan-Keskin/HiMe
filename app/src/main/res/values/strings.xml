@@ -1,0 +1,476 @@
+<resources>
+
+    <string name="app_name" translatable="false">HiMe</string>
+
+    <!-- Facebook -->
+    <string name="fb_keyhashes" translatable="false">Bmce+9aHdOoVtE7fS3B07tfj7Bc=</string>
+    <string name="facebook_app_id" translatable="false">977958385975425</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb977958385975425</string>
+
+    <!-- AdMob -->
+    <string name="admob_id" translatable="false">ca-app-pub-1951801777359867~6681021555</string>
+    <string name="admob_banner_id" translatable="false">ca-app-pub-1951801777359867/9564111868</string>
+    <string name="admob_dummy_banner_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="showcase_main" translatable="false">showcase_main</string>
+
+    <!-- Error String Resources -->
+    <string name="error_googleSignIn">Google Sign In Failed!</string>
+    <string name="error_authFailed">Authentication Failed!</string>
+    <string name="error_fbAuthFailed">Facebook Login Failed!</string>
+    <string name="error_empty_email">Email field cannot be empty.</string>
+    <string name="error_incorrect_email_form">Please enter correct email form. Eg: example@email.com</string>
+    <string name="error_empty_pass">Password field cannot be empty.</string>
+    <string name="error_pass_min_length">Minimum password length should be 6.</string>
+    <string name="error_pass_max_length">Password cannot exceed 18 characters.</string>
+    <string name="error_image_upload">Image Upload Failed</string>
+    <string name="error_empty_name">Please fill the Name field.</string>
+    <string name="error_empty_field">This field cannot be empty!</string>
+    <string name="error_video_upload">Error occurred while uploading video</string>
+    <string name="error_no_data_found">No record found!</string>
+
+    <!-- Prompt String Resources -->
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="age">Age</string>
+    <string name="prompt_uploadingVideo">Uploading Contents</string>
+    <string name="prompt_upladingVideo_message">Please wait while your content uploads…</string>
+
+    <!-- Action String Resources -->
+
+    <!-- GDPR &amp; User Validation -->
+    <string name="gdpr">Thank you for choosing to be part of our community at HiMe (“Company”, “we”, “us”, or “our”). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about our notice, or our practices with regards to your personal information, please contact us at himehuawei@gmail.com.
+When you visit our mobile application, and use our services, you trust us with your personal information. We take your privacy very seriously. In this privacy notice, we seek to explain to you in the clearest way possible what information we collect, how we use it and what rights you have in relation to it. We hope you take some time to read through it carefully, as it is important. If there are any terms in this privacy notice that you do not agree with, please discontinue use of our Apps and our services.
+This privacy notice applies to all information collected through our mobile application, ("Apps"), and/or any related services, sales, marketing or events (we refer to them collectively in this privacy notice as the "Services").
+Please read this privacy notice carefully as it will help you make informed decisions about sharing your personal information with us.
+</string>
+    <string name="our_permissions">Permissions Required:\n■  Access approximate location (network based) only in the foreground.\n
+        ■  Access precise location only in the foreground.\n
+        ■  Modify or delete the contents of your shared storage.\n
+        ■  Read the contents of your shared storage.\n
+        ■  Record audio.\n
+        ■  Take Pictures and videos.\n
+    </string>
+    <string name="gdpr_consent">I hereby consent that HiMe can use and process my data.</string>
+    <string name="gdpr_one_title">1. WHAT INFORMATION DO WE COLLECT?</string>
+    <string name="gdpr_one">
+Information automatically collected
+In Short:   Some information — such as IP address and/or browser and device characteristics — is collected automatically when you visit our Apps.
+We automatically collect certain information when you visit, use or navigate the Apps. This information does not reveal your specific identity (like your name or contact information) but may include device and usage information, such as your IP address, browser and device characteristics, operating system, language preferences, referring URLs, device name, country, location, information about how and when you use our Apps and other technical information. This information is primarily needed to maintain the security and operation of our Apps, and for our internal analytics and reporting purposes.
+Like many businesses, we also collect information through cookies and similar technologies.
+Information collected through our Apps
+In Short:   We may collect information regarding your geo-location, mobile device, push notifications, when you use our apps.
+If you use our Apps, we may also collect the following information:
+Geo-Location Information. We may request access or permission to and track location-based information from your mobile device, either continuously or while you are using our mobile application, to provide location-based services. If you wish to change our access or permissions, you may do so in your device\'s settings.
+Mobile Device Data. We may automatically collect device information (such as your mobile device ID, model and manufacturer), operating system, version information and IP address.
+Push Notifications. We may request to send you push notifications regarding your account or the mobile application. If you wish to opt-out from receiving these types of communications, you may turn them off in your device\'s settings.
+Information collected from other sources
+In Short:   We may collect limited data from public databases, marketing partners, social media platforms, and other outside sources.
+We may obtain information about your from other sources, such as public databases, joint marketing partners, social media platforms (such as Facebook), as well as from other third parties. Examples of the information we receive from other sources include: social media profile information (your name, gender, birthday, email, current city, state and country, user identification numbers for your contacts, profile picture URL, and any other information that you choose to make public); marketing leads and search results and links, including paid listings (such as sponsored links). We will inform you about the source of information and the type of information and the type of information we have collected about you within a reasonable period after obtaining the personal data, but at the latest within one month.
+    </string>
+    <string name="gdpr_two_title">2. HOW DO WE USE YOUR INFORMATION?</string>
+    <string name="gdpr_two">In Short:  We process your information for purposes based on legitimate business interests, the fulfillment of our contract with you, compliance with our legal obligations, and/or your consent.
+We use personal information collected via our Apps for a variety of business purposes described below. We process your personal information for these purposes in reliance on our legitimate business interests, in order to enter into or perform a contract with you, with your consent, and/or for compliance with our legal obligations. We indicate the specific processing grounds we rely on next to each purpose listed below.
+We use the information we collect or receive:
+To facilitate account creation and logon process. If you choose to link your account with us to a third party account (such as your Google or Facebook account), we use the information you allowed us to collect from those third parties to facilitate account creation and logon process for the performance of the contract. See the section below headed "HOW DO WE HANDLE YOUR SOCIAL LOGINS" for further information.
+Deliver targeted advertising to you. We may use your information to develop and display content and advertising (and work with third parties who do so) tailored to your interests and/or location and to measure its effectiveness.
+To enable user-to-user communications. We may use your information in order to enable user-to-user communications with each user\'s consent.
+To manage user accounts. We may use your information for the purposes of managing our account and keeping it in working order.
+    </string>
+    <string name="gdpr_three_title">3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?</string>
+    <string name="gdpr_three">In Short:  We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations.
+We may process or share data based on the following legal basis:
+Consent: We may process your data if you have given us specific consent to use your personal information in a specific purpose.
+Legitimate Interests: We may process your data when it is reasonably necessary to achieve our legitimate business interests.
+Performance of a Contract: Where we have entered into a contract with you, we may process your personal information to fulfill the terms of our contract.
+Legal Obligations: We may disclose your information where we are legally required to do so in order to comply with applicable law, governmental requests, a judicial proceeding, court order, or legal process, such as in response to a court order or a subpoena (including in response to public authorities to meet national security or law enforcement requirements).
+Vital Interests: We may disclose your information where we believe it is necessary to investigate, prevent, or take action regarding potential violations of our policies, suspected fraud, situations involving potential threats to the safety of any person and illegal activities, or as evidence in litigation in which we are involved.
+More specifically, we may need to process your data or share your personal information in the following situations:
+Vendors, Consultants and Other Third-Party Service Providers. We may share your data with third party vendors, service providers, contractors or agents who perform services for us or on our behalf and require access to such information to do that work. Examples include: payment processing, data analysis, email delivery, hosting services, customer service and marketing efforts. We may allow selected third parties to use tracking technology on the Apps, which will enable them to collect data about how you interact with the Apps over time. This information may be used to, among other things, analyze and track data, determine the popularity of certain content and better understand online activity. Unless described in this Policy, we do not share, sell, rent or trade any of your information with third parties for their promotional purposes.
+Business Transfers. We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.
+Third-Party Advertisers. We may use third-party advertising companies to serve ads when you visit the Apps. These companies may use information about your visits to our Website(s) and other websites that are contained in web cookies and other tracking technologies in order to provide advertisements about goods and services of interest to you.
+Affiliates. We may share your information with our affiliates, in which case we will require those affiliates to honor this privacy notice. Affiliates include our parent company and any subsidiaries, joint venture partners or other companies that we control or that are under common control with us.
+Business Partners. We may share your information with our business partners to offer you certain products, services or promotions.
+Other Users. When you share personal information or otherwise interact with public areas of the Apps, such personal information may be viewed by all users and may be publicly distributed outside the Apps in perpetuity. If you interact with other users of our Apps and register through a social network (such as Facebook), your contacts on the social network will see your name, profile photo, and descriptions of your activity. Similarly, other users will be able to view descriptions of your activity, communicate with you within our Apps, and view your profile.
+    </string>
+    <string name="gdpr_four_title">4. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</string>
+    <string name="gdpr_four">
+        In Short:  We may use cookies and other tracking technologies to collect and store your information.
+We may use cookies and similar tracking technologies (like web beacons and pixels) to access or store information. Specific information about how we use such technologies and how you can refuse certain cookies is set out in our Cookie Policy.
+    </string>
+    <string name="gdpr_five_title">5. DO WE USE HERE / HUAWEI MAPS?</string>
+    <string name="gdpr_five">
+        In Short:  Yes, we use Google Maps for the purpose of providing better service.
+This website, mobile application, or Facebook application uses Google Maps APIs. You may find the Google Maps APIs Terms of Service here. To better understand Google’s Privacy Policy, please refer to this link.
+By using our Maps API Implementation, you agree to be bound by Google’s Terms of Service. By using our implementation of the Google Maps APIs, you agree to allow us to gain access to information about you including personally identifiable information (such as usernames) and non-personally identifiable information (such as location). We will be collecting the following information: \n
+■  Latitude \n
+■  Longitude \n
+■  GeoLocation \n
+For a full list of what we use information for, please see the previous section titled "HOW DO WE USE YOUR INFORMATION?" and “WILL YOUR INFORMATION BE SHARED WITH ANYONE?” You agree to allow us to obtain or cache your location. You may revoke your consent at anytime. We use information about location in conjunction with data from other data providers.
+The Maps APIs that we use store and access cookies and other information on your devices. If you are a user currently in the European Economic Area (EU countries, Iceland, Liechtenstein and Norway), please take a look at our EU User Consent Policy.
+    </string>
+    <string name="gdpr_six_title">6. HOW DO WE HANDLE YOUR SOCIAL LOGINS?</string>
+    <string name="gdpr_six">
+        In Short:  If you choose to register or log in to our services using a social media account, we may have access to certain information about you.
+Our Apps offer you the ability to register and login using your third party social media account details (like your Facebook or Twitter logins). Where you choose to do this, we will receive certain profile information about you from your social media provider. The profile Information we receive may vary depending on the social media provider concerned, but will often include your name, e-mail address, friends list, profile picture as well as other information you choose to make public.
+We will use the information we receive only for the purposes that are described in this privacy notice or that are otherwise made clear to you on the Apps. Please note that we do not control, and are not responsible for, other uses of your personal information by your third party social media provider. We recommend that you review their privacy policy to understand how they collect, use and share your personal information, and how you can set your privacy preferences on their sites and apps.
+    </string>
+    <string name="gdpr_seven_title">7. WHAT IS OUR STANCE ON THIRD-PARTY WEBSITES?</string>
+    <string name="gdpr_seven">
+        In Short:  We are not responsible for the safety of any information that you share with third-party providers who advertise, but are not affiliated with, our websites.
+The Apps may contain advertisements from third parties that are not affiliated with us and which may link to other websites, online services or mobile applications. We cannot guarantee the safety and privacy of data you provide to any third parties. Any data collected by third parties is not covered by this privacy notice. We are not responsible for the content or privacy and security practices and policies of any third parties, including other websites, services or applications that may be linked to or from the Apps. You should review the policies of such third parties and contact them directly to respond to your questions.
+    </string>
+    <string name="gdpr_eight_title">8. HOW LONG DO WE KEEP YOUR INFORMATION?</string>
+    <string name="gdpr_eight">
+        In Short:  We keep your information for as long as necessary to fulfill the purposes outlined in this privacy notice unless otherwise required by law.
+We will only keep your personal information for as long as it is necessary for the purposes set out in this privacy notice, unless a longer retention period is required or permitted by law (such as tax, accounting or other legal requirements). No purpose in this policy will require us keeping your personal information for longer than 2 years past the start of idle period of the user\'s account.
+When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize it, or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible.
+    </string>
+    <string name="gdpr_nine_title">9. HOW DO WE KEEP YOUR INFORMATION SAFE?</string>
+    <string name="gdpr_nine">
+        In Short:  We aim to protect your personal information through a system of organizational and technical security measures.
+We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, please also remember that we cannot guarantee that the internet itself is 100% secure. Although we will do our best to protect your personal information, transmission of personal information to and from our Apps is at your own risk. You should only access the services within a secure environment.
+    </string>
+    <string name="gdpr_ten_title">10. WHAT ARE YOUR PRIVACY RIGHTS?</string>
+    <string name="gdpr_ten">
+       In Short:  In some regions, such as the European Economic Area, you have rights that allow you greater access to and control over your personal information. You may review, change, or terminate your account at any time.
+In some regions (like the European Economic Area), you have certain rights under applicable data protection laws. These may include the right (i) to request access and obtain a copy of your personal information, (ii) to request rectification or erasure; (iii) to restrict the processing of your personal information; and (iv) if applicable, to data portability. In certain circumstances, you may also have the right to object to the processing of your personal information. To make such a request, please use the contact details provided below. We will consider and act upon any request in accordance with applicable data protection laws.
+If we are relying on your consent to process your personal information, you have the right to withdraw your consent at any time. Please note however that this will not affect the lawfulness of the processing before its withdrawal.
+If you are resident in the European Economic Area and you believe we are unlawfully processing your personal information, you also have the right to complain to your local data protection supervisory authority. You can find their contact details here: \n http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.html. \n
+Account Information \n\n
+If you would at any time like to review or change the information in your account or terminate your account, you can: \n\n
+■  Log into your account settings and update your user account. \n
+Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, some information may be retained in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our Terms of Use and/or comply with legal requirements.
+Opting out of email marketing: You can unsubscribe from our marketing email list at any time by clicking on the unsubscribe link in the emails that we send or by contacting us using the details provided below. You will then be removed from the marketing email list – however, we will still need to send you service-related emails that are necessary for the administration and use of your account. To otherwise opt-out, you may: \n
+■  Note your preferences when you register an account with the site. \n
+■  Access your account settings and update preferences. \n
+    </string>
+    <string name="gdpr_eleven_title">11. CONTROLS FOR DO-NOT-TRACK FEATURES</string>
+    <string name="gdpr_eleven">
+        Most web browsers and some mobile operating systems and mobile applications include a Do-Not-Track (“DNT”) feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. No uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this privacy notice.
+    </string>
+    <string name="gdpr_twelve_title">12. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</string>
+    <string name="gdpr_twelve">
+        In Short:  Yes, if you are a resident of California, you are granted specific rights regarding access to your personal information.
+California Civil Code Section 1798.83, also known as the “Shine The Light” law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us using the contact information provided below.
+If you are under 18 years of age, reside in California, and have a registered account with the Apps, you have the right to request removal of unwanted data that you publicly post on the Apps. To request removal of such data, please contact us using the contact information provided below, and include the email address associated with your account and a statement that you reside in California. We will make sure the data is not publicly displayed on the Apps, but please be aware that the data may not be completely or comprehensively removed from our systems.
+    </string>
+    <string name="gdpr_thirteen_title">13. DO WE MAKE UPDATES TO THIS POLICY?</string>
+    <string name="gdpr_thirteen">
+        In Short:  Yes, we will update this policy as necessary to stay compliant with relevant laws.
+We may update this privacy notice from time to time. The updated version will be indicated by an updated “Revised” date and the updated version will be effective as soon as it is accessible. If we make material changes to this privacy notice, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this privacy notice frequently to be informed of how we are protecting your information.
+    </string>
+    <string name="gdpr_fourteen_title">14. HOW CAN YOU CONTACT US ABOUT THIS POLICY?</string>
+    <string name="gdpr_fourteen">
+        If you have questions or comments about this policy, you may email us at himehuawei@gmail.com or by post to: \n\n
+HiMe Team\n\n
+onurcan.keskin@huawei.com \n
+        neslihan.metin@huawei.com
+    </string>
+    <string name="gdpr_title">PRIVACY NOTICE</string>
+    <string name="gdpr_date">Last updated March 10, 2020</string>
+    <string name="user_consent">User Consent Text (Test)</string>
+    <string name="logo">logo</string>
+    <string name="splash_rights">rights</string>
+
+    <!-- Single Posted Card -->
+    <string name="follower">Follower</string>
+    <string name="interest">Interests</string>
+    <string name="message">Message</string>
+    <string name="zero" translatable="false">0</string>
+    <string name="dummyText" translatable="false">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</string>
+    <string name="postedBy">Posted By <b>%1$s</b></string>
+    <string name="postedBy_me">Posted By <b>%1$s</b> (Me)</string>
+
+    <!-- LoginActivity -->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="rememberMe">Remember Me</string>
+    <string name="register">Register Now</string>
+    <string name="or">or</string>
+    <string name="login">Login</string>
+    <string name="arrow">arrow</string>
+    <string name="prompt_check">Please Check the box to continue.</string>
+    <string name="action_continue">Continue</string>
+
+    <!-- MainActivity -->
+    <string name="nav_map">Map</string>
+    <string name="nav_add">Add</string>
+    <string name="nav_activity">Activity</string>
+    <string name="nav_galley">Gallery</string>
+    <string name="nav_mail_inbox">Mail Inbox</string>
+    <string name="main_hello">Hello</string>
+    <string name="hi_status">Hi, I am your status. Change me if you want.</string>
+    <string name="attention_mark" translatable="false">!</string>
+    <string name="friend">Hello Friend!</string>
+    <string name="frag_discover">Discover</string>
+    <string name="frag_fresh">Fresh</string>
+    <string name="frag_trend">Trending</string>
+    <string name="nav_party">Party</string>
+    <string name="nav_location">Location</string>
+    <string name="interest_card_image">Interest Card Image</string>
+
+    <!-- InterestsActivity -->
+    <string name="interests_message">Welcome, Tell us about yourself</string>
+    <string name="action_next">Next</string>
+    <string name="name_surname">Name &amp; Surname or Username</string>
+    <string name="interest_age">Please select your age interval</string>
+    <string name="image">Image</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="nav_home">Home</string>
+    <string name="share">Share</string>
+    <string name="follow">Follow</string>
+    <string name="himeUser">HiMe User</string>
+    <string name="me"><bi>%1$s</bi> (Me)</string>
+    <string name="type_a_message_here">Type a message here…</string>
+    <string name="type_a_comment_here">Type your comments…</string>
+    <string name="shared_gallery">Shared Gallery</string>
+    <string name="location_tag">Location Tag</string>
+    <string name="shared_pictures">Shared Pictures</string>
+    <string name="shared_activities">Shared Activities</string>
+    <string name="lovely">Lovely</string>
+    <string name="timestamp">00:00</string>
+    <string name="livefocus">Focus</string>
+    <string name="livetorch">Torch</string>
+    <string name="liveflip">Flip</string>
+    <string name="livecamera">Take Photo</string>
+    <string name="master_follow">Follow</string>
+    <string name="inter_music">Music</string>
+    <string name="nav_livestream">Live Stream</string>
+    <string name="nav_travel">Travel</string>
+    <string name="set_live_stream_title">Set Live Stream Title</string>
+    <string name="save_title">Save Title</string>
+
+    <string name="smile">Smile :)</string>
+    <string name="test_num" translatable="false">5</string>
+    <string name="nav_events">Events</string>
+    <string name="dash" translatable="false">-</string>
+    <string name="txt_hash">#text</string>
+    <string name="play_pause">Play / Pause</string>
+    <string name="app_version">version</string>
+    <string name="settings">Settings</string>
+    <string name="settings_language">Language</string>
+    <string name="lang_turkish">Turkish</string>
+    <string name="lang_english">English</string>
+    <string name="day_night_mode">Day / Night Mode</string>
+    <string name="day">Day</string>
+    <string name="error_lang_already_selected">Current language is already set by your preferences.</string>
+    <string name="memory">Memory</string>
+    <string name="default_text_watcher" translatable="false">0/0</string>
+    <string name="error_max_fields">Watch out for the Max Fields!</string>
+    <string name="prompt_save_success">Saved Successfully</string>
+    <string name="action_record_video">Record Video</string>
+    <string name="action_choose_gallery">Choose From Gallery</string>
+    <string name="card_gallery">Gallery</string>
+    <string name="card_event">Event</string>
+    <string name="card_travel">Travel</string>
+    <string name="default_last_online" translatable="false">00:00</string>
+    <string name="statOnline">Online</string>
+
+    <!-- Post Settings -->
+    <string name="post_settings_post_to">Post to other apps…</string>
+    <string name="post_settings_edit">Edit post</string>
+    <string name="post_settings_delete">Delete</string>
+    <string name="post_settings_show">Show in timeline</string>
+    <string name="post_settings_hide">Hide from timeline</string>
+    <string name="post_settings_setas">Set as Profile Picture</string>
+    <string name="post_settings_commentable">Open to Comments</string>
+    <string name="post_settings_no_commentable">Close to Comments</string>
+
+    <string name="post_action_posting_to">Posting to other apps…</string>
+    <string name="post_action_editing">Editing post</string>
+    <string name="post_action_deleting">Deleting post</string>
+    <string name="post_action_showing">Showing post in timeline</string>
+    <string name="post_action_hiding">Hiding post in timeline</string>
+    <string name="post_action_settingas">Setting as Profile Picture</string>
+    <string name="post_action_opening_to_comments">Opening post to comments</string>
+    <string name="post_action_closing_to_comments">Closing post to comments</string>
+
+    <string name="post_footer">Tell us your thoughts</string>
+    <string name="post_tag">Tag</string>
+    <string name="click_map">Interact with map for locations.</string>
+    <string name="error_location_pick">Please select a location from the map.</string>
+    <string name="error_travel_upload">Error occured while uploading! Please try again.</string>
+    <string name="live_stream">Live Stream</string>
+    <string name="pick_photo">Pick Photo</string>
+    <string name="start">START</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="live_capture_video">Capture Video</string>
+    <string name="frag_find_hime_rs">Find HiMe\'rs</string>
+    <string name="followed_hime_rs">Followed HiMe\'rs</string>
+    <string name="error_maximum_five">You can choose Maximum of 5</string>
+    <string name="pick_photos_from_gallery">Pick Photos From Gallery</string>
+    <string name="remove">Remove</string>
+    <string name="following">Following</string>
+    <string name="num_of_following"><b>%1$s</b> Following</string>
+    <string name="followers">Followers</string>
+    <string name="num_of_followers"><b>%1$s</b> Followers</string>
+    <string name="no_one_is_following_you">No one is Following!</string>
+    <string name="you_are_following_no_one">Following no one!</string>
+    <string name="mapHolder">MapHolder</string>
+    <string name="status">Status</string>
+    <string name="chat_between">Chat Between:</string>
+    <string name="whats_on_your_mind">Whats on your mind?</string>
+    <string name="himerights">All Rights Reserved. HiMe&#174;\n202_ 202_</string>
+    <string name="error_pickInt">Please pick atleast 1 Interest</string>
+    <string name="app_settings">App Settings</string>
+    <string name="user_settings">User Settings</string>
+    <string name="make_prof">Set as profile picture</string>
+    <string name="tag">Tag</string>
+    <string name="reply">Reply</string>
+    <string name="views">views</string>
+    <string name="view_replies">View Replies</string>
+    <string name="comments">Comments</string>
+
+    <string name="post_closed_comment">Post is Closed to Comments</string>
+    <string name="your_age_interval">Your age interval</string>
+    <string name="night">Night</string>
+    <string name="prof_profile">Profile Pictures</string>
+    <string name="prof_photo">Photos</string>
+    <string name="prof_video">Videos</string>
+    <string name="item_message">Message</string>
+    <string name="num_of_item_message"><b>%1$s</b> Message</string>
+    <string name="show_on_map">Show on map</string>
+    <string name="add_photos">Add Photos</string>
+    <string name="add_profile_pictures">Add Profile Pictures</string>
+    <string name="prof_saved">Profile picture replaced.</string>
+    <string name="stop">Stop</string>
+    <string name="offline">Offline</string>
+    <string name="online">Online</string>
+    <string name="minute_ago">Minute ago</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="just_now">Just now</string>
+    <string name="an_hour_ago">An hour ago</string>
+    <string name="profile_privacy">Profile Privacy</string>
+    <string name="hideprof">Hide My Profile</string>
+    <string name="show_message">I want to receive messages</string>
+    <string name="hide_message">I don\'t want to receive messages</string>
+    <string name="show_memory">I want others to see my memory</string>
+    <string name="hide_memory">I don\'t want others see my memory</string>
+    <string name="show_shares">I want others to see my posts</string>
+    <string name="hide_shares">I don\'t want others to see my posts</string>
+    <string name="show_followers">I want others to see my followers</string>
+    <string name="hide_followers">I don\'t want others to see my followers.</string>
+    <string name="editPost">Edit Post</string>
+    <string name="error_hq_video">Can\'t take HQ pictures while in Video mode.</string>
+    <string name="error_glSurface" translatable="false">Picture snapshots are only allowed with the GL_SURFACE preview</string>
+    <string name="error_hq_camera">Can\'t record HQ videos while in Camera mode</string>
+    <string name="filter">Filter</string>
+    <string name="switch_camera">Switch Camera</string>
+    <string name="error_snapshot_camera" translatable="false">Can\'t capture video snapshot while in Camera Mode.</string>
+    <string name="error_snapshot_video" translatable="false">Can\'t capture picture snapshot while in Video Mode.</string>
+    <string name="action_stop_following">Stop Following</string>
+    <string name="tuto_home_banner" translatable="false">Home Banner</string>
+    <string name="post">post</string>
+    <string name="posts">Posts</string>
+    <string name="proceed">Proceed</string>
+    <string name="tuto_main_banner">By interacting with your Profile Picture you can visit your own customizable Profile Page</string>
+    <string name="tuto_main_trending_h">Trending with Home will display popular Image posts regardles of your interests.</string>
+    <string name="tuto_main_trending_t">Trending with Travel will display popular Map posts regardless of your interests.</string>
+    <string name="tuto_main_trending_e">Trending with Events will display popular Event posts regardless of your interests.</string>
+    <string name="tuto_main_fresh_h">Fresh with Home will display daily Image posts regardless of your interests.</string>
+    <string name="tuto_main_fresh_t">Fresh with Travel will display daily Map posts regardless of your interests.</string>
+    <string name="tuto_main_fresh_e">Discover with Events will display Event posts only based on your interests.</string>
+    <string name="tuto_main_fresh_g">Discover with Gallery will display Video posts only based on your interests.</string>
+    <string name="tuto_main_discover_h">Discover with Home will display Image posts only based on your interests.</string>
+    <string name="tuto_main_discover_t">Discover with Travel will display Map posts only based on your interests.</string>
+    <string name="tuto_main_discover_e">Discover with Events will display Event posts only based on your interests.</string>
+    <string name="tuto_main_discover_g">Discover with Gallery will display Video posts only based on your interests.</string>
+    <string name="tuto_main_live">From Live Stream - You may take photos - Capture videos - Pick images from your gallery - Start Live Streams globaly (upcoming)</string>
+    <string name="tabs">Tabs</string>
+    <string name="skip">Skip</string>
+    <string name="end_tuto">End Tutorial</string>
+    <string name="account">Account</string>
+    <string name="places">Places</string>
+    <string name="search">Search</string>
+    <string name="hashtag" translatable="false">Hashtag</string>
+    <string name="search_hastags">Hashtags</string>
+    <string name="search_accounts">Accounts</string>
+    <string name="search_places">Places</string>
+    <string name="results_found">results found</string>
+    <string name="add_tags">Add Tags</string>
+    <string name="write_a_caption">Write a caption...</string>
+    <string name="tooltip_error_send_message">You can\'t send message to</string>
+    <string name="tooltip_error_see_memo">You can\'t see the wall of</string>
+    <string name="tooltip_info_like_given">You have already given Lovely to</string>
+    <string name="tooltip_error_see_followers">You can\'t see the followers of</string>
+    <string name="tooltip_error_video">You can\'t see the gallery of</string>
+    <string name="tooltip_error_event">You can\'t see the event of</string>
+    <string name="tooltip_error_travel">You can\'t see the travel posts of</string>
+    <string name="tooltip_error_see_following_p1">You can\'t see whom</string>
+    <string name="tooltip_error_see_following_p2">is following</string>
+    <string name="tooltip_info_take_a_peek">Take a peek on your profile.</string>
+    <string name="tooltip_error_posts_p1">Posts of</string>
+    <string name="tooltip_error_posts_p2">is private.</string>
+    <string name="delete_confirm">Do you want to delete this post?</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_note">(It will also going to be deleted from the timeline.)</string>
+    <string name="yes">Yes, delete post.</string>
+    <string name="no">No, keep post.</string>
+    <string name="unfollow">Unfollow</string>
+    <string name="action_unfollow_main">Do you want to unfollow #<b>%1$s</b></string>
+    <string name="action_no_keep_as_follower">No, keep Following.</string>
+    <string name="action_yes_remove_following">"Yes, stop Following."</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="clear">Clear</string>
+    <string name="save">Save</string>
+    <string name="error_no_message_found">No message history found!</string>
+    <string name="no_calendar_selection">No date selection made for the Event!</string>
+    <string name="mode_switch">Mode Switch</string>
+    <string name="detect_language">detect language</string>
+
+    <!-- Language Country Codes -->
+    <string name="en" translatable="false">en</string>
+    <string name="tr" translatable="false">tr</string>
+    <string name="fullscreen">fullscreen</string>
+    <string name="border">border</string>
+    <string name="calendar">Calendar</string>
+    <string name="caption">Caption</string>
+    <string name="replies">Replies</string>
+    <string name="num_of_replies"><b>%1$s</b> Replies</string>
+    <string name="add_cover">Add Cover Photo</string>
+    <string name="error_empty_caption">Please fill the caption for the event.</string>
+    <string name="coverphoto">coverPhoto</string>
+    <string name="Post">Post</string>
+    <string name="Follower">Follower</string>
+
+    <!-- Age Spinner -->
+    <string-array name="ageSpinner">
+        <item>5 – 10</item>
+        <item>11 – 20</item>
+        <item>21 – 30</item>
+        <item>31 – 40</item>
+        <item>41 – 50</item>
+        <item>51 – 60</item>
+        <item>61 – Above</item>
+    </string-array>
+
+    <string-array name="translateTo">
+        <item>en</item>
+        <item>tr</item>
+    </string-array>
+    <string name="tuto_main_find">Find HIME\'rs will display all users registered on our app. If their profile are not private you may check up on their profile page, see their shares or even start conversing with them.</string>
+    <string name="tuto_main_trending_g">Trending with Gallery will display popular Video posts regardless of your interests.</string>
+
+
+    <string name="filter_mono" translatable="false">mono</string>
+    <string name="filter_solar" translatable="false">solarize</string>
+    <string name="filter_sepia" translatable="false">sepia</string>
+    <string name="filter_posterize" translatable="false">posterize</string>
+    <string name="filter_whiteboard" translatable="false">whiteboard</string>
+    <string name="filter_blackboard" translatable="false">blackboard</string>
+    <string name="filter_aqua" translatable="false">aqua</string>
+    <string name="preview">Preview</string>
+    <string name="shuffle">Shuffle</string>
+    <string name="repeat">Repeat</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="next">Next</string>
+    <string name="vr">VR</string>
+
+    <!-- Latest Added Are Below Here. FIX THEM -->
+</resources>

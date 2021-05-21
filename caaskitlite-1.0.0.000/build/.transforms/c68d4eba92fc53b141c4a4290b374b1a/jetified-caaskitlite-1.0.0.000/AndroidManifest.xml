@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.huawei.caas.caasservice"
+    android:revisionCode="100000"
+    android:versionCode="100000"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="29" />
+    <!-- Add permissions for HwCaasService -->
+    <uses-permission android:name="com.huawei.hwcaasservice.THIRDPARTY_BIND_HWCAAS_SERVICE" />
+    <!-- Add permissions for Virtual Service -->
+    <uses-permission android:name="com.huawei.dmsdp.permission.localappservice" />
+
+</manifest>

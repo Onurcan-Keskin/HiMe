@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pf_card_lyt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/transparent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="?attr/darkerBackground"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/colorRightBubble"
+        app:strokeWidth="1dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarSize="8dp"
+            android:scrollbarThumbVertical="@color/colorAlmondLight">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/pfCardLottie"
+                        android:layout_width="155dp"
+                        android:layout_height="155dp"
+                        android:layout_centerHorizontal="true"
+                        android:elevation="6dp"
+                        android:visibility="gone"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/globe_progress_lottie" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="50dp"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/glitters"
+                        app:tint="?attr/almondBorder" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/profile_change_circle_img"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="-24dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="131dp"
+                        android:layout_toEndOf="@+id/profile_change_circle_img"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/ic_edit_24dp"
+                        app:tint="?attr/borderColor" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_change_circle_img"
+                        android:layout_width="155dp"
+                        android:layout_height="155dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/background_elipse_red"
+                        android:elevation="5dp"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_account_circle"
+                        app:civ_border_color="?attr/almondBorder"
+                        app:civ_border_width="2dp" />
+
+                </RelativeLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:strokeColor="@color/colorRightBubble"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/backgroundColour"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal"
+                        android:paddingStart="1dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="1dp"
+                        android:paddingBottom="5dp"
+                        android:weightSum="1">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".16">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:contentDescription="@string/name_surname"
+                                android:src="@drawable/ic_account_circle"
+                                app:tint="?attr/borderColor" />
+
+                        </RelativeLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/profile_change_name_lyt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".84"
+                            android:background="?attr/backgroundColour"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"
+                            android:textColorHint="?attr/almondBorder"
+                            app:boxBackgroundColor="@color/colorRightBubble"
+                            app:boxCollapsedPaddingTop="3dp"
+                            app:boxStrokeColor="?attr/borderColor"
+                            app:boxStrokeWidth="1dp"
+                            app:counterEnabled="true"
+                            app:counterMaxLength="75"
+                            app:counterTextColor="?almondBorder"
+                            app:errorEnabled="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/profile_change_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="?attr/backgroundColour"
+                                android:fontFamily="serif"
+                                android:hint="@string/name_surname"
+                                android:textColor="?attr/tintColour"
+                                android:textColorHint="?attr/textColour"
+                                android:textSize="16sp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/pf_mt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:strokeColor="@color/colorRightBubble"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/backgroundColour"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal"
+                        android:paddingStart="1dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="1dp"
+                        android:paddingBottom="5dp"
+                        android:weightSum="1">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".16">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:contentDescription="@string/name_surname"
+                                android:src="@drawable/ic_memory"
+                                app:tint="?attr/borderColor" />
+
+                        </RelativeLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/profile_change_memory_lyt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".84"
+                            android:background="?attr/backgroundColour"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"
+                            android:textColorHint="?attr/almondBorder"
+                            app:boxBackgroundColor="@color/colorRightBubble"
+                            app:boxCollapsedPaddingTop="3dp"
+                            app:boxStrokeColor="@color/colorRightBubble"
+                            app:boxStrokeWidth="1dp"
+                            app:counterEnabled="true"
+                            app:counterMaxLength="120"
+                            app:counterTextColor="?attr/almondBorder">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/profile_change_memory"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="?attr/backgroundColour"
+                                android:fontFamily="serif"
+                                android:hint="@string/memory"
+                                android:textColor="?attr/tintColour"
+                                android:textColorHint="?attr/textColour"
+                                android:textSize="16sp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="?attr/darkerBackground">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/pf_mt3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:background="@color/white"
+                        app:cardCornerRadius="10dp"
+                        app:strokeColor="@color/colorRightBubble"
+                        app:strokeWidth="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/backgroundColour"
+                            android:baselineAligned="false"
+                            android:orientation="horizontal"
+                            android:paddingStart="1dp"
+                            android:paddingTop="5dp"
+                            android:paddingEnd="1dp"
+                            android:paddingBottom="5dp"
+                            android:weightSum="1">
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".16">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:contentDescription="@string/name_surname"
+                                    android:src="@drawable/ic_memory"
+                                    app:tint="?attr/borderColor" />
+
+                            </RelativeLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/profile_change_status_lyt"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".84"
+                                android:background="?attr/backgroundColour"
+                                android:paddingStart="5dp"
+                                android:paddingEnd="5dp"
+                                android:textColorHint="?attr/almondBorder"
+                                app:boxBackgroundColor="@color/colorRightBubble"
+                                app:boxCollapsedPaddingTop="3dp"
+                                app:boxStrokeColor="@color/colorRightBubble"
+                                app:boxStrokeWidth="1dp"
+                                app:counterEnabled="true"
+                                app:counterMaxLength="45"
+                                app:counterTextColor="?attr/almondBorder">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/profile_change_status"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="?attr/backgroundColour"
+                                    android:fontFamily="serif"
+                                    android:hint="@string/status"
+                                    android:textColor="?attr/tintColour"
+                                    android:textColorHint="?attr/textColour"
+                                    android:textSize="16sp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <RelativeLayout
+                        android:id="@+id/save_lyt"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/pf_mt3"
+                        android:layout_centerHorizontal="true">
+
+                        <View
+                            android:id="@+id/pv"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="5dp"
+                            android:background="@color/colorRightBubble" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/profile_save"
+                            android:layout_width="120dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/pv"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/ic_rectangle_almond"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:selectableItemBackground"
+                            android:text="@string/fui_button_text_save"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

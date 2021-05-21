@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/single_post_card_video_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/darkerBackground"
+    android:orientation="vertical"
+    app:ignore="NamespaceTypo">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/post_card_video_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="@dimen/post_holder_margin_bottom"
+        android:elevation="8dp"
+        card_view:cardBackgroundColor="?attr/backgroundColour"
+        card_view:cardCornerRadius="1dp"
+        card_view:strokeColor="?attr/almondBorder">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingBottom="5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/hybrid_card_poster_img"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ic_hexagon"
+                    android:backgroundTint="?attr/almondPurple"
+                    android:padding="7dp"
+                    android:src="@drawable/splachback"
+                    card_view:civ_border_color="@color/white"
+                    card_view:civ_border_width="1dp" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/hybrid_card_poster"
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/name"
+                        android:textColor="@color/colorRightBubble"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/hybrid_post_followers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/hybrid_card_poster"
+                        android:layout_toStartOf="@id/post_f"
+                        android:fontFamily="@font/phenomena_regular"
+                        android:text="@string/zero"
+                        android:textColor="?attr/almondBorder"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/post_f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/hybrid_card_poster"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/Follower"
+                        android:textColor="?attr/textColour"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/hybrid_card_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:background="@color/transparent"
+                    android:clickable="true"
+                    android:contentDescription="@string/image"
+                    android:focusable="true"
+                    android:foreground="@drawable/round_selector_purple"
+                    android:src="@drawable/ic_threedots_vertical"
+                    android:tint="@color/grey"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/post_content_height">
+
+                <FrameLayout
+                    android:id="@+id/hybrid_videoContainerLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/post_content_height">
+
+                    <com.klinker.android.simple_videoview.SimpleVideoView
+                        android:id="@+id/hybrid_video_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/foregroundColour"
+                        app:loop="false"
+                        app:muted="false"
+                        app:showSpinner="true"
+                        app:stopSystemAudio="true" />
+
+                </FrameLayout>
+
+                <com.ramotion.circlemenu.CircleMenuView
+                    android:id="@+id/circle_menu_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/post_content_height"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    app:visibility="visible"
+                    card_view:button_colors="@array/colors_video"
+                    card_view:button_icons="@array/icons_video" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/posted_exp_lovely_lottie"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/post_content_height"
+                    android:visibility="gone"
+                    card_view:lottie_autoPlay="true"
+                    card_view:lottie_rawRes="@raw/lovely_explosion_lottie" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/posted_delete_lottie"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/post_content_height"
+                    android:background="?attr/darkerBackground"
+                    android:elevation="11dp"
+                    android:visibility="gone"
+                    card_view:lottie_autoPlay="false"
+                    card_view:lottie_rawRes="@raw/delete_success_lottie" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/hybrid_card_popularity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/phenomena_regular"
+                    android:paddingStart="10dp"
+                    android:text="@string/zero"
+                    android:textColor="?attr/almondBorder" />
+
+                <TextView
+                    android:id="@+id/post_card_popviews"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/hybrid_card_popularity"
+                    android:text="@string/views"
+                    android:textColor="?attr/textColour"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/hybrid_card_video_fullscreen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:clickable="true"
+                    android:contentDescription="@string/fullscreen"
+                    android:focusable="true"
+                    android:foreground="?android:selectableItemBackground"
+                    android:src="@drawable/ic_fullscreen"
+                    card_view:tint="?attr/almondPurple" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/hybrid_card_ui_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:weightSum="8">
+
+                <LinearLayout
+                    android:id="@+id/hybrid_card_lovely_lyt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/post_ui_controller_image"
+                        android:gravity="center"
+                        card_view:drawableTint="?attr/almondPurple"
+                        card_view:drawableTopCompat="@drawable/ic_lovelyicon" />
+
+                    <TextView
+                        android:id="@+id/hybrid_card_lovely"
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/post_ui_controller_text"
+                        android:gravity="center"
+                        android:text="@string/zero"
+                        android:textColor="@color/colorRightBubble"
+                        android:textSize="@dimen/post_ui_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hybrid_card_message"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/post_ui_controller_image"
+                        android:gravity="center"
+                        card_view:drawableTint="?attr/almondPurple"
+                        card_view:drawableTopCompat="@drawable/ic_send_message" />
+
+                    <TextView
+                        android:id="@+id/hybrid_card_total_message"
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/post_ui_controller_text"
+                        android:gravity="center"
+                        android:text="@string/zero"
+                        android:textColor="@color/colorRightBubble"
+                        android:textSize="@dimen/post_ui_text" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/hybrid_card_share"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    card_view:drawableTint="?attr/almondPurple"
+                    card_view:drawableTopCompat="@drawable/ic_share" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/hybrid_card_footer"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:ems="3"
+                android:focusable="true"
+                android:fontFamily="@font/alegreya_sans_medium"
+                android:foreground="?android:selectableItemBackground"
+                android:maxLines="3"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="?attr/tintColour"
+                android:textSize="15sp"
+                tools:text="@string/text" />
+
+            <LinearLayout
+                android:id="@+id/hybrid_post_change_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:selectableItemBackground"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/hybrid_detected_language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="serif"
+                    android:text="@string/detect_language"
+                    android:textColor="@color/colorAccent" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/ic_arrow_forward"
+                    card_view:tint="@color/colorAccent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="@string/en"
+                    android:textColor="@color/colorAccent" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/hybrid_translated_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:ems="3"
+                android:focusable="true"
+                android:fontFamily="@font/alegreya_sans_medium"
+                android:foreground="?android:selectableItemBackground"
+                android:maxLines="3"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text=""
+                android:textColor="?attr/tintColour"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/hybrid_card_tag1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/atomic_age"
+                    android:foreground="?android:selectableItemBackground"
+                    android:gravity="center"
+                    android:text="@string/txt_hash"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="@dimen/tag_text_size"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/hybrid_card_tag2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/atomic_age"
+                    android:foreground="?android:selectableItemBackground"
+                    android:gravity="center"
+                    android:text="@string/txt_hash"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="@dimen/tag_text_size"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/hybrid_card_tag3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/atomic_age"
+                    android:foreground="?android:selectableItemBackground"
+                    android:gravity="center"
+                    android:text="@string/txt_hash"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="@dimen/tag_text_size"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/hybrid_card_tag4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/atomic_age"
+                    android:foreground="?android:selectableItemBackground"
+                    android:gravity="center"
+                    android:text="@string/txt_hash"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="@dimen/tag_text_size"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/hybrid_card_tag5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/atomic_age"
+                    android:foreground="?android:selectableItemBackground"
+                    android:gravity="center"
+                    android:text="@string/txt_hash"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="@dimen/tag_text_size"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

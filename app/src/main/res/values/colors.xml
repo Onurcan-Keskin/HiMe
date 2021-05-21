@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#11141B</color>
+    <color name="colorPrimaryDark">#11141B</color>
+    <color name="colorPrimaryLight">#1A202B</color>
+    <color name="colorPrimaryFade">#AA11141B</color>
+    <color name="colorAccent">@color/colorBlue</color>
+    <color name="colorAccentDark">@color/colorBlueDark</color>
+    <color name="colorAccentTranslucent">@color/colorBlueTranslucent</color>
+    <color name="colorAccentTransparent">@color/colorBlueTransparent</color>
+    <color name="colorAccentFade">@color/colorBlueFade</color>
+    <color name="colorGreen">#00CBA9</color>
+    <color name="colorBlue">#3EA6FF</color>
+    <color name="colorBlueDark">#066794</color>
+    <color name="colorRed">#FF2851</color>
+    <color name="colorWhite">#F2F4F4</color>
+    <color name="colorPureWhite">#FFFFFF</color>
+    <color name="colorGray">#2B2B2B</color>
+    <color name="colorLight">#9EA1A7</color>
+    <color name="grey">#CBCBCB</color>
+    <color name="colorBackgroundLight">#252A2C</color>
+    <color name="colorYBackgroundLight">#181818</color>
+    <color name="colorSecondaryLight">#85FFFFFF</color>
+    <color name="colorWhiteTransparent">#00F2F4F4</color>
+    <color name="colorGrayTransparent">#00333333</color>
+    <color name="colorGreenTransparent">#0000CBA9</color>
+    <color name="colorRedTransparent">#00FF2851</color>
+    <color name="colorBlueTransparent">#005AC8FA</color>
+    <color name="colorWhiteFade">#22F2F4F4</color>
+    <color name="colorWhiteTranslucent">#11F2F4F4</color>
+    <color name="colorGrayTranslucent">#66333333</color>
+    <color name="colorGreenTranslucent">#1800CBA9</color>
+    <color name="colorBlueTranslucent">#185AC8FA</color>
+    <color name="colorRedFade">#33FF2851</color>
+    <color name="colorGreenFade">#5500CBA9</color>
+    <color name="colorBlueFade">#555AC8FA</color>
+    <color name="colorRedTranslucent">#18FF2851</color>
+    <color name="colorPurpleFade">#555C10A4</color>
+    <color name="colorGreenDark">#185A4F</color>
+
+    <color name="colorTextSecondary">#44FFFFFF</color>
+    <color name="colorPurpleRipple">#44955ba5</color>
+    <color name="colorBlueRipple">#445AC8FA</color>
+    <color name="colorCyanRipple">#445AC8FA</color>
+
+    <color name="lightText">#756D6D</color>
+
+    <color name="foregroundLight">#D5D2D2</color>
+    <color name="foregroundDark">#292828</color>
+
+    <color name="colorPostEmptySpace">#D5D5D5</color>
+
+    <color name="colorRegister">#5D8FFC</color>
+    <color name="colorGDPRBack">#39B5E1</color>
+    <color name="colorTextLight">#757575</color>
+    <color name="colorB">#E69022</color>
+
+    <color name="colorNavMap">#F9BE50</color>
+    <color name="colorNavActiv">#F59038</color>
+    <color name="colorNavVid">#26D3DC</color>
+
+    <color name="colorOnline">#28D130</color>
+    <color name="colorOffline">#FD0C0C</color>
+
+    <color name="colorTuto">#55000000</color>
+
+    <color name="darkSender">#606060</color>
+    <color name="darkReceiver">#434343</color>
+
+    <color name="colorRightBubble">#EE577F</color>
+    <color name="colorRightBubbleFade">#55EE577F</color>
+    <color name="colorLeftBubble">#FDAE7A</color>
+    <color name="colorLeftBubbleFade">#55FDAE7A</color>
+
+    <color name="colorAlmondDark">#FFC77D</color>
+    <color name="colorAlmondLight">#FFEACB</color>
+    <!-- ECDEC6 -->
+
+    <color name="colorCardBack">#FFF7EC</color>
+    <color name="colorAccount">#AED581</color>
+
+    <color name="content_fade_light">#4DFFFFFF</color>
+    <color name="content_fade_dark">#4D262626</color>
+
+    <color name="colorSenderLight">#3EA6FF</color>
+    <color name="colorSenderDark">#2B262D</color>
+    <color name="colorReceiveLight">#FF5722</color>
+    <color name="colorReceiveDark">#212121</color>
+
+    <color name="colorLightAsh">#939393</color>
+
+    <color name="colorDarkBlueLight">#2B2D3C</color>
+    <color name="colorDarkBlueDark">#232535</color>
+
+    <color name="colorDanger">@color/colorRed</color>
+    <color name="colorDangerFade">@color/colorRedFade</color>
+    <color name="colorDangerTranslucent">@color/colorRedTranslucent</color>
+    <color name="colorDangerTransparent">@color/colorRedTransparent</color>
+    <color name="colorDialogDim">@color/colorPrimaryFade</color>
+    <color name="colorCardShadow">#FAF1F3</color>
+    <color name="colorPurple">#5C10A4</color>
+    <color name="colorPurpleLight">#C555F6</color>
+
+    <color name="freyaSecondary">#17131B</color>
+    <color name="freyaPrimary">#1B1C22</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="transparent">#0000</color>
+    <color name="foreground_dark">#25262C</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="midnight">#100C0B</color>
+    <color name="backgroundPrimary">#262626</color>
+
+    <color name="backgroundLight">#A6FFFFFF</color>
+    <color name="darkerBackground_Light">#F5F5F6</color>
+
+</resources>

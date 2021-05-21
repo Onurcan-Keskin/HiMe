@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_travel_cnstrnt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_back_bubble_yellow">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/backgroundColour"
+        android:scrollbarThumbVertical="@color/colorAlmondLight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="430dp">
+
+                <include
+                    android:id="@+id/map_layout"
+                    layout="@layout/layout_map"
+                    android:layout_width="fill_parent"
+                    android:layout_height="430dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp" />
+
+                <ImageView
+                    android:id="@+id/current_location_ic"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:clickable="true"
+                    android:contentDescription="@string/nav_location"
+                    android:focusable="true"
+                    android:foreground="@drawable/round_selector_purple"
+                    android:src="@drawable/ic_location" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="?attr/almondBorder" />
+
+            <TextView
+                android:id="@+id/profile_travel_location_tag_txt"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:shadowColor="@color/freyaPrimary"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="@string/click_map"
+                android:textColor="@color/colorNavMap"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profile_invisible_country_db_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/profile_travel_footer_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="?attr/foregroundColour"
+                android:hint="@string/write_a_caption"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textColorHint="?attr/almondBorder"
+                app:boxBackgroundColor="@color/colorRightBubble"
+                app:boxCollapsedPaddingTop="3dp"
+                app:boxStrokeColor="@color/colorRightBubble"
+                app:boxStrokeWidth="1dp"
+                app:counterEnabled="true"
+                app:counterTextColor="?attr/almondBorder"
+                app:errorEnabled="true"
+                app:errorTextColor="?attr/almondBorder"
+                app:helperTextTextColor="?attr/almondBorder"
+                app:hintTextColor="?attr/almondBorder">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profile_travel_footer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:fontFamily="@font/alegreya_sans_medium"
+                    android:textColor="?attr/tintColour"
+                    android:textColorHint="?attr/textColour"
+                    android:textSize="20sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/showTag"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edit_dark"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_arrow_downward"
+                android:drawableTint="?attr/almondBorder"
+                android:focusable="true"
+                android:fontFamily="@font/aldrich"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:text="@string/add_tags"
+                android:textColor="?attr/almondBorder" />
+
+            <LinearLayout
+                android:id="@+id/tagContainerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/foregroundColour"
+                android:baselineAligned="false"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:weightSum="5"
+                tools:visibility="visible">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/profile_travel_tag1_lyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="?attr/foregroundColour"
+                    android:textColorHint="?attr/almondBorder"
+                    app:boxBackgroundColor="@color/colorRightBubble"
+                    app:boxCollapsedPaddingTop="3dp"
+                    app:boxStrokeColor="@color/colorRightBubble"
+                    app:boxStrokeWidth="1dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20"
+                    app:counterTextColor="?attr/almondBorder"
+                    app:errorEnabled="true"
+                    app:errorTextColor="?attr/almondBorder"
+                    app:hintTextColor="?attr/almondBorder">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/profile_travel_tag1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:hint="@string/post_tag"
+                        android:inputType="text"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorBlue"
+                        android:textColorHint="?attr/textColour"
+                        android:textSize="@dimen/tag_edit_size" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/profile_travel_tag2_lyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="?attr/foregroundColour"
+                    android:textColorHint="?attr/almondBorder"
+                    app:boxBackgroundColor="@color/colorRightBubble"
+                    app:boxCollapsedPaddingTop="3dp"
+                    app:boxStrokeColor="@color/colorRightBubble"
+                    app:boxStrokeWidth="1dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20"
+                    app:counterTextColor="?attr/almondBorder"
+                    app:errorEnabled="true"
+                    app:errorTextColor="?attr/almondBorder"
+                    app:hintTextColor="?attr/almondBorder">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/profile_travel_tag2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:hint="@string/post_tag"
+                        android:inputType="text"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorBlue"
+                        android:textColorHint="?attr/textColour"
+                        android:textSize="@dimen/tag_edit_size" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/profile_travel_tag3_lyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="?attr/foregroundColour"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColorHint="?attr/almondBorder"
+                    app:boxBackgroundColor="@color/colorRightBubble"
+                    app:boxCollapsedPaddingTop="3dp"
+                    app:boxStrokeColor="@color/colorRightBubble"
+                    app:boxStrokeWidth="1dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20"
+                    app:counterTextColor="?attr/almondBorder"
+                    app:errorEnabled="true"
+                    app:errorTextColor="?attr/almondBorder"
+                    app:hintTextColor="?attr/almondBorder">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/profile_travel_tag3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:hint="@string/post_tag"
+                        android:inputType="text"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorBlue"
+                        android:textColorHint="?attr/textColour"
+                        android:textSize="@dimen/tag_edit_size" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/profile_travel_tag4_lyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="?attr/foregroundColour"
+                    android:textColorHint="?attr/almondBorder"
+                    app:boxBackgroundColor="@color/colorRightBubble"
+                    app:boxCollapsedPaddingTop="3dp"
+                    app:boxStrokeColor="@color/colorRightBubble"
+                    app:boxStrokeWidth="1dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20"
+                    app:counterTextColor="?attr/almondBorder"
+                    app:errorEnabled="true"
+                    app:errorTextColor="?attr/almondBorder"
+                    app:hintTextColor="?attr/almondBorder">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/profile_travel_tag4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:hint="@string/post_tag"
+                        android:inputType="text"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorBlue"
+                        android:textColorHint="?attr/textColour"
+                        android:textSize="@dimen/tag_edit_size" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/profile_travel_tag5_lyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="?attr/foregroundColour"
+                    android:textColorHint="?attr/almondBorder"
+                    app:boxBackgroundColor="@color/colorRightBubble"
+                    app:boxCollapsedPaddingTop="3dp"
+                    app:boxStrokeColor="@color/colorRightBubble"
+                    app:boxStrokeWidth="1dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20"
+                    app:counterTextColor="?attr/almondBorder"
+                    app:errorEnabled="true"
+                    app:errorTextColor="?attr/almondBorder"
+                    app:hintTextColor="?attr/almondBorder">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/profile_travel_tag5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:hint="@string/post_tag"
+                        android:inputType="text"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorBlue"
+                        android:textColorHint="?attr/textColour"
+                        android:textSize="@dimen/tag_edit_size" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/profile_travel_save_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/almond_mask"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:text="@string/fui_button_text_save"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/testImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_emoji"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--    <include-->
+    <!--        android:id="@+id/bottom_sheet_here"-->
+    <!--        layout="@layout/bottom_sheet_map"-->
+    <!--        android:visibility="gone" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

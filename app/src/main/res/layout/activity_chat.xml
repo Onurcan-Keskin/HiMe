@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chat_constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chat_bg_1"
+    tools:context=".ui.activities.ChatActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/message_r1"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:cardBackgroundColor="?attr/foregroundColour"
+            app:strokeColor="?attr/almondBorder"
+            app:strokeWidth="1dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/transparent"
+                android:padding="3dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/chat_rec_img"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:src="@drawable/splachback"
+                    app:civ_border_color="@color/colorOffline"
+                    app:civ_border_width="1dp" />
+
+                <TextView
+                    android:id="@+id/chat_rec_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/chat_rec_img"
+                    android:text="@string/name"
+                    android:textColor="?attr/tintColour"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/chat_rec_onlineStat"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/chat_rec_name"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/chat_rec_img"
+                    android:text="@string/timestamp"
+                    android:textColor="?attr/textColour"
+                    android:textSize="10sp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/chat_rec_onlineStat_img"
+                    android:layout_width="10dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/chat_rec_name"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_toStartOf="@id/chat_rec_onlineStat"
+                    android:src="@color/colorOffline"
+                    app:civ_border_color="@color/colorCardBack"
+                    app:civ_border_width="1dp" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/messages_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/message_ui"
+            android:layout_below="@+id/message_r1"
+            tools:listitem="@layout/single_message_right" />
+
+        <RelativeLayout
+            android:id="@+id/message_ui"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/transparent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/message_bottom_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toStartOf="@+id/message_send_button"
+                android:padding="5dp"
+                app:cardBackgroundColor="?attr/foregroundColour"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="3dp"
+                app:strokeColor="?attr/almondBorder"
+                app:strokeWidth="1dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/message_edit_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/transparent"
+                    android:hint="@string/type_a_message_here"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:singleLine="false"
+                    android:textColor="?attr/tintColour"
+                    android:textColorHint="?attr/textColour" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <ImageView
+                android:id="@+id/message_send_button"
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:clickable="true"
+                android:backgroundTint="@color/white"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_send"
+                app:tint="?attr/almondBorder" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+    <ImageView
+        android:id="@+id/master_interests_img"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/eventcircleicon"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/interest"/>
+
+    <TextView
+        android:id="@+id/master_interests_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/master_interests_img"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+
+        android:text="@string/name"
+        android:textColor="@color/colorRightBubble"
+        android:textSize="8sp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</RelativeLayout>

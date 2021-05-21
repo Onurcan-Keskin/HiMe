@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/darkerBackground"
+    tools:context=".ui.activities.SearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <nl.joery.animatedbottombar.AnimatedBottomBar
+            android:id="@+id/search_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".07"
+            android:background="?attr/backgroundColour"
+            app:abb_indicatorAppearance="round"
+            app:abb_indicatorColor="?attr/almondPurple"
+            app:abb_indicatorLocation="top"
+            app:abb_rippleColor="@color/colorAlmondLight"
+            app:abb_rippleEnabled="true"
+            app:abb_selectedIndex="0"
+            app:abb_selectedTabType="text"
+            app:abb_tabAnimation="slide"
+            app:abb_tabColor="?attr/almondBorder"
+            app:abb_tabColorSelected="?attr/almondPurple"
+            app:abb_tabs="@menu/bottom_search"
+            app:abb_textStyle="bold"
+            app:hideOnScroll="true" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/searchPager"
+            android:layout_width="match_parent"
+            android:background="?attr/darkerBackground"
+            android:layout_height="0dp"
+            android:layout_weight=".93" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

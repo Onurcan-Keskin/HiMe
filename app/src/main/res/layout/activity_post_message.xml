@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/contentView"
+    android:animateLayoutChanges="true"
+    android:layout_height="match_parent"
+    android:background="?attr/darkerBackground"
+    tools:context=".ui.activities.PostMessageActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/message_r3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true">
+
+        <ImageView
+            android:id="@+id/post_image"
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:contentDescription="@string/postedBy"
+            android:scaleType="centerCrop" />
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/post_video"
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:layout_gravity="fill"
+            app:layout_collapseParallaxMultiplier="0.7" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/message_r1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            app:cardBackgroundColor="?attr/foregroundColour"
+            app:strokeColor="?attr/almondBorder"
+            app:strokeWidth="1dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/sr"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/slide_right"
+                    android:tint="?attr/almondBorder" />
+
+                <TextView
+                    android:id="@+id/postOwner"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_toEndOf="@+id/sr"
+                    android:drawableEnd="@drawable/ic_arrow_upward"
+                    android:drawableTint="?attr/almondBorder"
+                    android:fontFamily="@font/aldrich"
+                    android:text="@string/postedBy"
+                    android:textColor="?attr/tintColour" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messages_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/message_ui"
+        android:layout_below="@+id/message_r3"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="?attr/darkerBackground"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:listitem="@layout/single_bottom_message_item" />
+
+    <RelativeLayout
+        android:id="@+id/message_ui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/transparent"
+        android:visibility="visible">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/message_bottom_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toStartOf="@+id/message_send_button"
+            android:padding="5dp"
+            app:cardBackgroundColor="?attr/foregroundColour"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="3dp"
+            app:strokeColor="?attr/almondBorder"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/message_sender_circle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_weight=".2"
+                    android:background="@drawable/ic_backgroundcircle"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="@drawable/round_selector_purple"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_account_circle" />
+
+                <EditText
+                    android:id="@+id/message_edit_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.8"
+                    android:backgroundTint="@color/transparent"
+                    android:hint="@string/type_a_comment_here"
+                    android:imeOptions="actionSend"
+                    android:background="@color/transparent"
+                    android:inputType="text|textCapSentences"
+                    android:singleLine="false"
+                    android:textColor="?attr/tintColour"
+                    android:textColorHint="?attr/textColour" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <ImageView
+            android:id="@+id/message_send_button"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:padding="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_send"
+            app:tint="?attr/almondBorder" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/message_closed_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/transparent"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/cardcorners_top"
+            android:backgroundTint="@color/colorGray"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="@string/post_closed_comment"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

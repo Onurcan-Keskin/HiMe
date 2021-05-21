@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".videorecord.RecordVideoActivity">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="5dp"
+        card_view:cardBackgroundColor="@color/colorCardBack"
+        card_view:cardCornerRadius="30dp"
+        card_view:contentPadding="10dp"
+        card_view:strokeColor="@color/colorRightBubble"
+        card_view:strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/post_card_poster_circle"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ic_hexagon"
+                    android:padding="7dp"
+                    android:src="@drawable/splachback" />
+
+                <TextView
+                    android:id="@+id/hybrid_card_poster"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/name"
+                    android:textColor="@color/colorRightBubble"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/post_card_video"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_video_camera"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="@drawable/round_selector_purple"
+                    android:onClick="recordVideoOnclick" />
+
+                <Button
+                    android:id="@+id/post_card_gallery"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/ic_gallery"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="@drawable/round_selector_purple"
+                    android:onClick="chooseVideoGalleryOnclick" />
+
+            </LinearLayout>
+
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_image"
+                android:visibility="gone"
+                app:controller_layout_id="@layout/custom_exocontroller_layout"
+                app:surface_type="texture_view">
+
+            </com.google.android.exoplayer2.ui.PlayerView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="330dp"
+                android:background="@drawable/splash_two"
+                android:orientation="vertical">
+
+                <VideoView
+                    android:id="@+id/post_card_videoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:visibility="invisible"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:id="@+id/post_card_video_lovely_lyt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="@drawable/round_selector_purple"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/ic_lovelyicon"
+                        android:drawableTint="@color/colorPurple"
+                        android:gravity="center"
+                        android:text="@string/lovely"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/single_post_card_video_lovely"
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/zero"
+                        android:textColor="@color/colorRightBubble"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/post_card_video_follower"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/ic_share"
+                    android:drawableTint="@color/colorPurple"
+                    android:focusable="true"
+                    android:foreground="@drawable/round_selector_purple"
+                    android:gravity="center"
+                    android:text="@string/share"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/post_card_video_message"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/ic_send_message"
+                    android:drawableTint="@color/colorPurple"
+                    android:focusable="true"
+                    android:foreground="@drawable/round_selector_purple"
+                    android:gravity="center"
+                    android:text="@string/message"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/single_post_card_video_exp"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:ems="3"
+                android:focusable="true"
+                android:foreground="?android:selectableItemBackground"
+                android:maxLines="3"
+                android:text="@string/dummyText"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/hashtag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:text="#ezhel #hime #konser"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/post_card_share_btn"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/purple_mask"
+                android:clickable="true"
+                android:onClick="upload"
+                android:focusable="true"
+                android:foreground="?android:selectableItemBackground"
+                android:text="@string/share"
+                android:textColor="#FFFFFF" />
+
+            <ProgressBar
+                android:id="@+id/pbar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:max="100" />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

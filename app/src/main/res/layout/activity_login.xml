@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    tools:context=".login.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/login_logo"
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="0dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/ic_user_icon" />
+
+        <LinearLayout
+            android:id="@+id/login_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_logo"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_card_size"
+                app:cardBackgroundColor="?attr/foregroundColour"
+                app:cardCornerRadius="10dp"
+                app:strokeColor="@color/grey"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:weightSum="1">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".16">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/email"
+                            android:src="@drawable/ic_account_circle"
+                            app:tint="?attr/textColour" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight=".84"
+                        android:background="?attr/foregroundColour"
+                        android:textColorHint="?attr/textColour">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/login_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="@string/email"
+                            android:inputType="textEmailAddress"
+                            android:textColor="?attr/tintColour"
+                            android:textColorHint="@color/colorLight" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_card_size"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="?attr/foregroundColour"
+                app:cardCornerRadius="10dp"
+                app:strokeColor="@color/grey"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:weightSum="1">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".16">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/password"
+                            android:src="@drawable/ic_vpn_key"
+                            app:tint="?attr/textColour" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight=".84"
+                        android:background="?attr/foregroundColour"
+                        android:textColorHint="?attr/textColour"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleTint="?attr/textColour">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/login_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:textColor="?attr/tintColour"
+                            android:textColorHint="@color/colorLight" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:id="@+id/login_remember_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                tools:targetApi="m">
+
+                <CheckBox
+                    android:id="@+id/login_remember_chekbox"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".64"
+                    android:buttonTint="?attr/textColour"
+                    android:gravity="center"
+                    android:text="@string/rememberMe"
+                    android:textAlignment="viewStart"
+                    android:textColor="?attr/textColour"
+                    tools:ignore="RtlCompat" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/login_email_signIn_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".36"
+                    android:background="@drawable/ic_remember"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:selectableItemBackground"
+                    android:text="@string/login"
+                    android:textColor="@color/colorPureWhite"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.25"
+                    android:background="?attr/textColour" />
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:text="@string/or"
+                    android:textColor="?attr/textColour" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.25"
+                    android:background="?attr/textColour" />
+
+            </LinearLayout>
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_fb_btn"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:visibility="visible" />
+
+            <include layout="@layout/layout_signin_button" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/login_settings_visibility_controller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_name_layout"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/settings"
+                android:textColor="?attr/textColour" />
+
+            <ImageView
+                android:id="@+id/login_settings_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/settings"
+                android:src="@drawable/ic_arrow_downward"
+                app:tint="?attr/textColour" />
+
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/login_settings_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_settings_visibility_controller"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="3dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="?attr/foregroundColour"
+            app:cardCornerRadius="10dp"
+            app:contentPadding="10dp"
+            app:strokeColor="@color/grey"
+            app:strokeWidth="1dp"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/log_tr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/turkish_flag"
+                    android:drawableTint="?attr/textColour"
+                    android:focusable="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:foreground="?android:selectableItemBackground"
+                    android:gravity="center_horizontal"
+                    android:text="@string/lang_turkish"
+                    android:textColor="?attr/tintColour" />
+
+                <TextView
+                    android:id="@+id/log_en"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/english_flag"
+                    android:drawableTint="?attr/textColour"
+                    android:focusable="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:foreground="?android:selectableItemBackground"
+                    android:gravity="center_horizontal"
+                    android:text="@string/lang_english"
+                    android:textColor="?attr/tintColour" />
+
+                <Switch
+                    android:id="@+id/dayNight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/day_night_mode"
+                    android:textColor="?attr/tintColour" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

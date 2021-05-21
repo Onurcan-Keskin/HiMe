@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/darkerBackground"
+    tools:context=".ui.activities.LiveSaveImageActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarThumbVertical="@color/colorAlmondLight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/live_image_frame"
+                android:layout_width="match_parent"
+                android:layout_height="530dp"
+                android:contentDescription="@string/image"
+                android:scaleType="centerCrop"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/save_footer_im_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="?attr/foregroundColour"
+                    android:hint="@string/write_a_caption"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColorHint="?attr/almondBorder"
+                    app:boxBackgroundColor="@color/colorRightBubble"
+                    app:boxCollapsedPaddingTop="3dp"
+                    app:boxStrokeColor="@color/colorRightBubble"
+                    app:boxStrokeWidth="1dp"
+                    app:counterEnabled="true"
+                    app:counterTextColor="?attr/almondBorder"
+                    app:errorEnabled="true"
+                    app:errorTextColor="?attr/almondBorder"
+                    app:helperTextTextColor="?attr/almondBorder"
+                    app:hintTextColor="?attr/almondBorder">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/save_footer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:textColor="?attr/tintColour"
+                        android:textColorHint="?attr/textColour"
+                        android:textSize="20sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/showTag"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/save_footer_layout"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/bg_edit_dark"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/ic_arrow_downward"
+                    android:drawableTint="?attr/almondBorder"
+                    android:focusable="true"
+                    android:fontFamily="@font/aldrich"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:text="@string/add_tags"
+                    android:textColor="?attr/almondBorder" />
+
+                <LinearLayout
+                    android:id="@+id/l1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/showTag"
+                    android:baselineAligned="false"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:weightSum="5"
+                    tools:visibility="visible">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/live_save_tag1_lyt"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:background="?attr/foregroundColour"
+                        android:textColorHint="?attr/almondBorder"
+                        app:boxBackgroundColor="@color/colorRightBubble"
+                        app:boxCollapsedPaddingTop="3dp"
+                        app:boxStrokeColor="@color/colorRightBubble"
+                        app:boxStrokeWidth="1dp"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="20"
+                        app:counterTextColor="?attr/almondBorder"
+                        app:errorEnabled="true"
+                        app:errorTextColor="?attr/almondBorder"
+                        app:hintTextColor="?attr/almondBorder">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/live_save_tag1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:hint="@string/post_tag"
+                            android:inputType="text"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorBlue"
+                            android:textColorHint="?attr/textColour"
+                            android:textSize="@dimen/tag_edit_size" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/live_save_tag2_lyt"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:background="?attr/foregroundColour"
+                        android:textColorHint="?attr/almondBorder"
+                        app:boxBackgroundColor="@color/colorRightBubble"
+                        app:boxCollapsedPaddingTop="3dp"
+                        app:boxStrokeColor="@color/colorRightBubble"
+                        app:boxStrokeWidth="1dp"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="20"
+                        app:counterTextColor="?attr/almondBorder"
+                        app:errorEnabled="true"
+                        app:errorTextColor="?attr/almondBorder"
+                        app:hintTextColor="?attr/almondBorder">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/live_save_tag2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:hint="@string/post_tag"
+                            android:inputType="text"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorBlue"
+                            android:textColorHint="?attr/textColour"
+                            android:textSize="@dimen/tag_edit_size" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/live_save_tag3_lyt"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:background="?attr/foregroundColour"
+                        android:textColorHint="?attr/almondBorder"
+                        app:boxBackgroundColor="@color/colorRightBubble"
+                        app:boxCollapsedPaddingTop="3dp"
+                        app:boxStrokeColor="@color/colorRightBubble"
+                        app:boxStrokeWidth="1dp"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="20"
+                        app:counterTextColor="?attr/almondBorder"
+                        app:errorEnabled="true"
+                        app:errorTextColor="?attr/almondBorder"
+                        app:hintTextColor="?attr/almondBorder">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/live_save_tag3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:hint="@string/post_tag"
+                            android:inputType="text"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorBlue"
+                            android:textColorHint="?attr/textColour"
+                            android:textSize="@dimen/tag_edit_size" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/live_save_tag4_lyt"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:background="?attr/foregroundColour"
+                        android:textColorHint="?attr/almondBorder"
+                        app:boxBackgroundColor="@color/colorRightBubble"
+                        app:boxCollapsedPaddingTop="3dp"
+                        app:boxStrokeColor="@color/colorRightBubble"
+                        app:boxStrokeWidth="1dp"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="20"
+                        app:counterTextColor="?attr/almondBorder"
+                        app:errorEnabled="true"
+                        app:errorTextColor="?attr/almondBorder"
+                        app:hintTextColor="?attr/almondBorder">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/live_save_tag4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:hint="@string/post_tag"
+                            android:inputType="text"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorBlue"
+                            android:textColorHint="?attr/textColour"
+                            android:textSize="@dimen/tag_edit_size" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/live_save_tag5_lyt"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:background="?attr/foregroundColour"
+                        android:textColorHint="?attr/almondBorder"
+                        app:boxBackgroundColor="@color/colorRightBubble"
+                        app:boxCollapsedPaddingTop="3dp"
+                        app:boxStrokeColor="@color/colorRightBubble"
+                        app:boxStrokeWidth="1dp"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="20"
+                        app:counterTextColor="?attr/almondBorder"
+                        app:errorEnabled="true"
+                        app:errorTextColor="?attr/almondBorder"
+                        app:hintTextColor="?attr/almondBorder">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/live_save_tag5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:hint="@string/post_tag"
+                            android:inputType="text"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorBlue"
+                            android:textColorHint="?attr/textColour"
+                            android:textSize="@dimen/tag_edit_size" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/save_live_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/l1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/almond_mask"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:selectableItemBackground"
+                    android:text="@string/fui_button_text_save"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

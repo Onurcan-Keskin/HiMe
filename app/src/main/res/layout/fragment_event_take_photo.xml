@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/darkerBackground"
+    android:orientation="vertical"
+    tools:context=".profile.profileevent.takePhoto.EventTakePhotoFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/takePhotoAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/darkerBackground"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/takePhotoToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/darkerBackground"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/CalendarToolbarTheme"
+            app:titleTextColor="?attr/almondBorder" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/preview_view"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="?attr/backgroundColour" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/progress_lottie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/globe_progress_lottie" />
+
+        <ImageView
+            android:id="@+id/torch_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ln"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/transparent"
+            android:clickable="true"
+            android:contentDescription="@string/image"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:src="@drawable/ic_flash_off"
+            app:tint="?attr/almondBorder" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save_pick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ln"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_rectangle_almond"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:layout_margin="5dp"
+            tools:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/ln"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/scrim_bottom"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/video_circle_view"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:contentDescription="@string/image"
+                android:focusable="true"
+                android:foreground="?android:selectableItemBackground"
+                android:padding="10dp"
+                android:src="@drawable/ic_picture_default"
+                app:tint="?attr/almondBorder" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/take_photo_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:clickable="true"
+                android:drawableTop="@drawable/button_shutter"
+                android:focusable="true"
+                android:foreground="?android:selectableItemBackground"
+                android:text="@string/take_photo"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/flipCircleView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:contentDescription="@string/image"
+                android:focusable="true"
+                android:foreground="?android:selectableItemBackground"
+                android:padding="10dp"
+                android:src="@drawable/ic_flip_camera"
+                app:tint="?attr/almondBorder" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

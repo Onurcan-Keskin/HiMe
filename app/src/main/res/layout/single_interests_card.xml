@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/single_interest_card"
+    android:layout_width="75dp"
+    android:layout_height="75dp"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="?attr/tintPurple"
+    app:cardCornerRadius="10dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/white"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/single_interest_img"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:contentDescription="@string/interest_card_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/splachback" />
+
+        <CheckBox
+            android:id="@+id/single_interest_checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:buttonTint="?attr/tintPurple"
+            android:drawableTint="?attr/tintPurple"
+            android:gravity="start|end" />
+
+        <TextView
+            android:id="@+id/single_interest_txt"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/colorPurpleFade"
+            android:gravity="center|bottom"
+            android:textColor="@color/colorPureWhite"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            tools:ignore="SmallSp" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

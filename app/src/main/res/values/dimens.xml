@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_card_size">65dp</dimen>
+    <dimen name="gdpr_title_size">35dp</dimen>
+    <dimen name="bottom_nav_item_size">45dp</dimen>
+    <dimen name="main_margin">5dp</dimen>
+    <dimen name="main_padding">20dp</dimen>
+    <dimen name="master_linear_tab">35dp</dimen>
+    <dimen name="main_banner_txt_size">25sp</dimen>
+    <dimen name="live_icons">40dp</dimen>
+    <dimen name="live_icons_end_margin">10dp</dimen>
+    <dimen name="post_card_content_holder">330dp</dimen>
+    <dimen name="wheel_height">185dp</dimen>
+    <dimen name="popup_text">18sp</dimen>
+    <dimen name="popup_img">32dp</dimen>
+
+    <dimen name="post_content_height">450dp</dimen>
+    <dimen name="post_holder_margin_bottom">0dp</dimen>
+
+    <dimen name="video_min_height">231dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="follower_margin">5dp</dimen>
+    <dimen name="tag_edit_size">14sp</dimen>
+
+    <dimen name="eventAdderPickSize">115dp</dimen>
+
+    <dimen name="custom_item_width">256dp</dimen>
+    <dimen name="custom_item_height">144dp</dimen>
+    <dimen name="custom_container_height">144dp</dimen>
+    <dimen name="custom_card_left">56dp</dimen>
+    <dimen name="custom_card_gap">12dp</dimen>
+
+    <dimen name="toolbar_right">8dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+    <dimen name="post_ui_text">12sp</dimen>
+
+    <dimen name="tag_text_size">11sp</dimen>
+
+    <dimen name="tag_card_margin">2dp</dimen>
+    <dimen name="tag_card_radius">2dp</dimen>
+
+    <dimen name="post_ui_controller_image">30dp</dimen>
+    <dimen name="post_ui_controller_text">20dp</dimen>
+
+    <dimen name="single_card_pagination">120dp</dimen>
+
+    <dimen name="take_photo_text">10sp</dimen>
+    <dimen name="take_photo_filter_image">52dp</dimen>
+
+    <integer name="showcase_delay">100</integer>
+    <integer name="showcase_config_delay">50</integer>
+</resources>

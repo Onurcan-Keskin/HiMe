@@ -1,0 +1,358 @@
+<resources>
+
+    <!--          https://asrt.gluege.boerde.de             -->
+    <!--          Usefull for Translations                  -->
+
+    <!-- Facebook -->
+
+    <!-- Error String Resources -->
+    <string name="error_googleSignIn">Google oturum açma başarısız!</string>
+    <string name="error_authFailed">Kimlik Doğrulama Başarısız Oldu!</string>
+    <string name="error_fbAuthFailed">Facebook ile Giriş Başarısız Oldu!</string>
+    <string name="error_empty_email">E-posta alanı boş olamaz.</string>
+    <string name="error_incorrect_email_form">Lütfen doğru e-posta formunu girin. Örneğin: example@email.com</string>
+    <string name="error_empty_pass">Parola alanı boş olamaz.</string>
+    <string name="error_pass_min_length">Minimum parola uzunluğu 6 olmalıdır.</string>
+    <string name="error_pass_max_length">Parola 18 karakteri geçemez.</string>
+    <string name="error_image_upload">Resim Yükleme Başarısız Oldu</string>
+    <string name="error_empty_name">Lütfen Ad alanını doldurun.</string>
+    <string name="error_empty_field">Bu alan boş olamaz!</string>
+    <string name="error_video_upload">Video yüklerken hata oluştu</string>
+    <string name="error_no_data_found">Kayıt bulunamadı!</string>
+
+    <!-- Prompt String Resources -->
+    <string name="name">İsim</string>
+    <string name="surname">Soyisim</string>
+    <string name="age">Yaş</string>
+    <string name="prompt_uploadingVideo">İçerik Yükleme</string>
+    <string name="prompt_upladingVideo_message">Videonuz yüklenirken bekleyin…</string>
+
+    <!-- Action String Resources -->
+
+    <!-- GDPR &amp; User Validation -->
+    <string name="gdpr">HiMe\'de topluluğumuzun bir parçası olmayı seçtiğiniz için teşekkür ederiz ("Şirket", "Biz", ya da "bizim"). Kişisel bilgilerinizi ve gizlilik hakkınızı korumayı taahhüt ediyoruz. Bildirimimiz veya kişisel bilgilerinizle ilgili uygulamalarımız la ilgili herhangi bir sorunuz veya endişeniz varsa, lütfen himehuawei@gmail.com adresimizi uygulamamızı ziyaret ettiğinizde ve hizmetlerimizi kullandığınızda, kişisel bilgileriniz konusunda bize güvenin. Gizliliğinizi çok ciddiye alıyoruz. Bu gizlilik bildiriminde, hangi bilgileri topladığımızı, nasıl kullandığımızı ve bu bilgilerle ilgili olarak hangi haklara sahip olduğunuzu size mümkün olan en açık şekilde açıklamaya çalışıyoruz. Biz önemli olduğu gibi, dikkatle okumak için biraz zaman ayırın umuyoruz. Bu gizlilik bildiriminde kabul etmediğiniz herhangi bir koşul varsa, lütfen Uygulamalarımızın ve hizmetlerimizin kullanımını durdurmayın.\nBu gizlilik bildirimi mobil uygulamamız aracılığıyla toplanan tüm bilgiler için geçerlidir,("Uygulamalar"), ve/veya ilgili hizmetler, satışlar, pazarlama veya etkinlikler (bu gizlilik bildiriminde bunlara "Hizmetler") olarak topluca başvururuz).\nLütfen bu gizlilik bildirimini dikkatlice okuyun, kişisel bilgilerinizi bizimle paylaşma konusunda bilinçli kararlar almanıza yardımcı olmasını diliyoruz.</string>
+    <string name="our_permissions">Gerekli İzinler:\n■ Yalnızca ön planda yaklaşık konuma (ağ tabanlı) eriş.\n
+        ■ Hassas konuma yalnızca ön planda erişin.\n
+        ■ Paylaşılan depolama alanınızın içeriğini değiştir veya sil.\n
+        ■ Paylaşılan depolama alanınızın içeriğini oku.\n
+        ■ Ses kaydet.\n
+        ■ Fotoğraf ve video çek.\n</string>
+    <string name="gdpr_consent">Ben bu vesileyle HiMe\'nin verilerimi kullanabileceğine ve işleyebilceğine izin veriyorum.</string>
+    <string name="gdpr_one_title">1. HANGİ BİLGİLERİ TOPLUYORUZ?</string>
+    <string name="gdpr_one">Otomatik olarak toplanan bilgiler
+Kısacası: Uygulamalarımızı ziyaret ettiğinizde IP adresi ve/veya tarayıcı ve cihaz özellikleri gibi bazı bilgiler otomatik olarak toplanır.
+Uygulamaları ziyaret ettiğinizde, kullandığınızda veya uygulamalarda gezinirken belirli bilgileri otomatik olarak toplarız. Bu bilgiler özel kimliğinizi (adınız veya iletişim bilgileriniz gibi) göstermez, ancak IP adresiniz, tarayıcınız ve cihaz özellikleriniz, işletim sisteminiz, dil tercihleriniz, yönlendirme URL\'leriniz, cihaz adı, ülke, konum, Uygulamalarımızı nasıl ve ne zaman kullandığınızla ilgili bilgiler ve diğer teknik bilgiler gibi cihaz ve kullanım bilgilerini içerebilir. Bu bilgiler öncelikle Uygulamalarımızın güvenliğini ve çalışmasını sağlamak ve dahili analiz ve raporlama amaçlarımız için gereklidir.
+Birçok işletme gibi, biz de çerezleri ve benzeri teknolojiler aracılığıyla bilgi topluyoruz.\n
+Uygulamalarımız aracılığıyla toplanan bilgiler\n
+Kısacası: Uygulamalarımızı kullandığınızda coğrafi konumunuz, mobil cihazınız, anında iletme bildirimlerinizle ilgili bilgi toplayabiliriz.\n
+Uygulamalarımızı kullanırsanız, aşağıdaki bilgileri de toplayabiliriz:\n
+Coğrafi Konum Bilgileri. Konum tabanlı hizmetler sağlamak için mobil cihazınızdan konum tabanlı bilgilere sürekli olarak veya mobil uygulamamızı kullanırken erişim veya izin isteyebiliriz. Erişimimizi veya izinlerimizi değiştirmek isterseniz, bunu cihazınızın ayarlarında yapabilirsiniz.\n
+Mobil Cihaz Verileri. Cihaz bilgilerini (mobil cihaz kimliğiniz, modeliniz ve üreticiniz gibi), işletim sistemini, sürüm bilgilerini ve IP adresini otomatik olarak toplayabiliriz.\n
+Push Bildirimleri. Hesabınız veya mobil uygulamanızla ilgili anında iletme bildirimleri göndermenizi isteyebiliriz. Bu tür iletişimleri almaktan çıkmak isterseniz, bunları cihazınızın ayarlarında kapatabilirsiniz.\n
+Diğer kaynaklardan toplanan bilgiler\n
+Kısacası: Genel veritabanlarından, pazarlama ortaklarından, sosyal medya platformlarından ve diğer dış kaynaklardan sınırlı veri toplayabiliriz.\n
+Kamu veritabanları, ortak pazarlama ortakları, sosyal medya platformları (Facebook gibi) gibi diğer kaynaklardan ve diğer üçüncü taraflardan sizin ki hakkında bilgi alabiliriz. Diğer kaynaklardan aldığımız bilgilere örnek olarak şunlar verilebilir: sosyal medya profil bilgileriniz (adınız, cinsiyetiniz, doğum gününüz, e-postanız, geçerli şehir, eyalet ve ülkeniz, kişileriniz için kullanıcı kimlik numaralarınız, profil resmi URL\'niz ve herkese açık hale getirmeyi seçtiğiniz diğer bilgiler); ücretli girişler (sponsorlu bağlantılar gibi) dahil olmak üzere pazarlama müşteri adayları ve arama sonuçları ve bağlantılar. Kişisel verileri aldıktan sonra makul bir süre içinde, ancak en geç bir ay içinde bilgi kaynağı, bilgi türü ve sizin hakkınıza topladığımız bilgi türü hakkında sizi bilgilendireceğiz.</string>
+    <string name="gdpr_two_title">2. BİLGİLERİNİZİ NASıL KULLANIRIZ?</string>
+    <string name="gdpr_two">Kısaca: Bilgilerinizi yasal ticari menfaatlere, sizinle olan sözleşmemizin yerine getirilmesine, yasal yükümlülüklerimize uymaya ve/veya sizin rızanıza dayalı amaçlarla işliyoruz.n Uygulamalarımız aracılığıyla toplanan kişisel bilgileri aşağıda açıklanan çeşitli iş amaçları için kullanırız. Kişisel bilgilerinizi, yasal ticari çıkarlarımıza güvenerek, sizin rızanızla ve/veya yasal yükümlülüklerimize uymak için sizinle bir sözleşme yapmak veya sözleşme yapmak amacıyla işliyoruz. Aşağıda listelenen her amaç için güvendiğimiz özel işleme zeminini belirtiriz.n Topladığımız veya aldığımız bilgileri kullanırız:n Hesap oluşturma ve oturum açma işlemini kolaylaştırmak için. Hesabınızı bizimle birlikte bir üçüncü taraf hesabına (Google veya Facebook hesabınız gibi) bağlamayı seçerseniz, sözleşmenin gerçeklemesi için hesap oluşturma ve oturum açma işlemini kolaylaştırmak için bu üçüncü taraflardan toplamamıza izin verdiğiniz bilgileri kullanırız. Daha fazla bilgi için aşağıdaki bölüme bakın "SOSYAL GİrİşLERİnİzİ NASIL ELE ALIYORUZ"; Bilgilerinizi, ilgi alanlarınıza ve/veya konumunuza uygun içerik ve reklam geliştirmek ve görüntülemek (ve bunu yapan üçüncü taraflarla çalışmak) ve kullanıcıdan kullanıcıya iletişimi etkinleştirmek için kullanabiliriz. Bilgilerinizi, her kullanıcının rızasıyla kullanıcıdan kullanıcıya iletişimi etkinleştirmek için kullanabiliriz.nKullanıcı hesaplarını yönetmek için. Bilgilerinizi, hesabınızı yönetmek ve çalışma düzeninde tutmak amacıyla kullanabiliriz.\n</string>
+    <string name="gdpr_three_title">3. BİLGİLERİNİZ HERHANGİ BİRİYLE PAYLAŞILACAK MI?</string>
+    <string name="gdpr_three">Kısacası: Bilgileri yalnızca rızanızla, yasalara uymak, size hizmet sağlamak, haklarınızı korumak veya iş yükümlülüklerini yerine getirmek için paylaşıyoruz.nAşağıdaki yasal temele dayalı verileri işleyebilir veya paylaşabiliriz:nRıza: Kişisel bilgilerinizi belirli bir amaç doğrultusunda kullanmamıza özel izin verdiyseniz verilerinizi işleyebiliriz.nMeşru İlgi Alanları : Yasal ticari çıkarlarımızı elde etmek için makul bir şekilde gerekli olduğunda verilerinizi işleyebiliriz.nSözleşmenin Performansı: Sizinle sözleşme yaptığımız durumlarda, sözleşmemizin koşullarını yerine getirmek için kişisel bilgilerinizi işleyebiliriz.nYasal Yükümlülükler: Yürürlükteki yasalara uymak için yasal olarak gerekli olan yerlerde bilgilerinizi ifşa edebiliriz , resmi talepler, bir adli işlem, mahkeme kararı veya mahkeme celbine yanıt olarak (ulusal güvenlik veya yasa uygulama gerekliliklerini karşılamak için kamu makamlarına yanıt dahil olmak üzere)nVital Çıkarlar: Politikalarımızın potansiyel ihlalleri, şüpheli dolandırıcılık ile ilgili olarak soruşturma, önleme veya işlem yapılması gerektiğine inandığımız durumlarda bilgilerinizi ifşa edebiliriz, , Herhangi bir kişinin ve yasa dışı faaliyetlerin güvenliğine yönelik potansiyel tehditiçeren durumlar veya dahil olduğumuz davalarda kanıt olarak.nDaha spesifik olarak, verilerinizi işlememiz veya kişisel bilgilerinizi aşağıdaki durumlarda paylaşmamız gerekebilir:nSatıcılar, Danışmanlar ve Diğer Üçüncü Taraf Hizmet Sağlayıcıları. Verilerinizi bizim için veya bizim adımıza hizmet veren ve bu işi yapmak için bu tür bilgilere erişim gerektiren üçüncü taraf satıcılar, hizmet sağlayıcıları, yükleniciler veya aracılarla paylaşabiliriz. Örnekler şunlardır: ödeme işleme, veri analizi, e-posta teslimi, barındırma hizmetleri, müşteri hizmetleri ve pazarlama çabaları. Seçili üçüncü tarafların Uygulamalar\nda izleme teknolojisini kullanmasına izin verebiliriz, bu da uygulamalarla zaman içinde nasıl etkileşimde bulunduğun hakkında veri toplamalarına olanak tanır. Bu bilgiler, diğer şeylerin yanı sıra, verileri analiz etmek ve izlemek, belirli içeriğin popülerliğini belirlemek ve çevrimiçi etkinliği daha iyi anlamak için kullanılabilir. Bu Politikada belirtilmediği sürece, bilgilerinizi promosyon amaçları doğrultusunda üçüncü taraflarla paylaşmayız, satmayız, kiralamayız veya takas etmeziz.nBusiness Transferleri. Bilgilerinizi, herhangi bir birleşme, şirket varlıklarının satışı, finansmanı veya işletmemizin tamamının veya bir kısmının başka bir şirkete satılması veya satın alınması yla bağlantılı olarak veya görüşmeler sırasında paylaşabilir veya aktarabiliriz.nThird Taraf Reklamverenler. Uygulamaları ziyaret ettiğinizde reklam yayınlamak için üçüncü taraf reklam şirketlerini kullanabiliriz. Bu şirketler, web sitemizi ve web çerezleri ve diğer izleme teknolojilerinde yer alan diğer web sitelerine yaptığınız ziyaretlerle ilgili bilgileri, ilginizi çeken mal ve hizmetlerle ilgili reklamlar sunmak için kullanabilirler.nAffiliates. Bilgilerinizi iştiraklerimizle paylaşabiliriz, bu durumda bu iştiraklerin bu gizlilik bildirimine uymalarını talep edeceğiz. İştirakler arasında ana şirketimiz ve ana şirketimiz, ortak girişim ortakları veya kontrol ettiğimiz veya bizimle ortak kontrol altında olan diğer şirketler yer alır.nBusiness Partners. Size belirli ürünler, hizmetler veya promosyonlar sunmak için bilgilerinizi iş ortaklarımızla paylaşabiliriz.\nDiğer Kullanıcılar. Kişisel bilgilerinizi paylaştığınızda veya Uygulamaların ortak alanlarıyla etkileşimde olduğunuzda, bu tür kişisel bilgiler tüm kullanıcılar tarafından görüntülenebilir ve sürekli olarak Uygulamalar dışında herkese açık olarak dağıtılabilir. Uygulamalarımızın diğer kullanıcılarıyla etkileşimde bulundurup bir sosyal ağ üzerinden (Facebook gibi) kaydolursanız, sosyal ağdaki kişileriniz adınızı, profil fotoğrafınızı ve etkinliğinizin açıklamalarını görür. Benzer şekilde, diğer kullanıcılar etkinliğinizin açıklamalarını görüntüleyebilir, Uygulamalarımız içinde sizinle iletişim kurabilir ve profilinizi görüntüleyebilir.\n</string>
+    <string name="gdpr_four_title">4. ÇEREZLERİ VE DİĞER İZLEME TEKNOLOJİLERİNİ NASIL İŞLİYORUZ?</string>
+    <string name="gdpr_four">Kısacası: Bilgilerinizi toplamak ve depolamak için çerezleri ve diğer izleme teknolojilerini kullanabiliriz.n Bilgilere erişmek veya depolamak için çerezleri ve benzeri izleme teknolojilerini (web işaretçileri ve pikseller gibi) kullanabiliriz. Bu tür teknolojileri nasıl kullandığımız ve belirli tanımlama bilgilerini nasıl reddedebileceğiniz hakkında belirli bilgiler Çerez Politikamızda belirlenmiştir.\n</string>
+    <string name="gdpr_five_title">5. HERE / HUAWEI HARİTALAR KULLANIYOR MUYUZ?</string>
+    <string name="gdpr_five">Kısacası: Evet, HERE / Huawei Haritalar\'ı daha iyi hizmet sunmak amacıyla kullanıyoruz. Bu web sitesi, mobil uygulama veya Facebook uygulaması HERE / Huawei Haritalar API\'larını kullanır. HERE / Huawei Haritalar API\'leri Hizmet Koşullarını burada bulabilirsiniz. Google\'ın Gizlilik Politikası\'nı daha iyi anlamak için lütfen bu bağlantıya bakın.nMaps API Uygulamamızı kullanarak Google\'ın Hizmet Şartları\'na bağlı olmayı kabul edersiniz. Google Haritalar API\'larını uygulamamızı kullanarak, kişisel olarak tanımlanabilir bilgiler (kullanıcı adları gibi) ve kişisel olarak tanımlanabilir olmayan bilgiler (konum gibi) dahil olmak üzere sizinle ilgili bilgilere erişmemize izin vermeyi kabul edersiniz. Şu bilgileri toplayacağız: \n\n■ Latitude \n\n■ Boylam \n\n■ GeoLocation \n\n Bilgileri ne için kullandığımızın tam listesi için lütfen bir önceki bölüme bakın BİlGİLERİnİ NASIL KULLANIRIZ? ve BİlGİLERİN PAYLAŞILACAK MI? Konumunuzu edinmemize veya önbelleğe almamıza izin vermeyi kabul emzsiniz. Onayınızı istediğiniz zaman iptal edebilirsiniz. Konumla ilgili bilgileri diğer veri sağlayıcılarından gelen verilerle birlikte kullanırız.nCihazlarda depolama ve erişim çerezleri ve diğer bilgilere kullandığımız Haritalar API\'ları. Şu anda Avrupa Ekonomik Alanı\'nda (AB ülkeleri, İzlanda, Lihtenştayn ve Norveç) bir kullanıcıysanız, lütfen AB Kullanıcı İzni Politikamıza bir göz atın.\n</string>
+    <string name="gdpr_six_title">6. SOSYAL GİRİŞLERİNİ NASIL KULLANIYORUZ?</string>
+    <string name="gdpr_six">Kısacası: Bir sosyal medya hesabı kullanarak hizmetlerimize kaydolmayı veya oturum açmayı seçerseniz, sizinle ilgili belirli bilgilere erişebiliriz.nUygulamalarımız size üçüncü taraf sosyal medya hesap bilgilerinizi (Facebook veya Twitter oturum açmalarınız gibi) kullanarak kaydolma ve giriş yapma olanağı sunabiliriz. Bunu yapmayı seçtiğiniz de, sosyal medya sağlayıcınızdan hakkınızda belirli profil bilgileri alacağız. Aldığımız profil Bilgileri ilgili sosyal medya sağlayıcısına bağlı olarak değişebilir, ancak genellikle adınızı, e-posta adresinizi, arkadaş listenizi, profil resminizi ve herkese açık hale getirmeyi seçtiğiniz diğer bilgileri içerir.\n Aldığımız bilgileri yalnızca bu gizlilik bildiriminde açıklanan veya Uygulamalar\'da size açık olmayan amaçlar için kullanırız. Kişisel bilgilerinizin üçüncü taraf sosyal medya sağlayıcınız tarafından diğer kullanımlarını kontrol etmediğimizi ve bunlardan sorumlu olmadığımızı lütfen unutmayın. Kişisel bilgilerinizi nasıl topladığını, kullandığını ve paylaştığını ve sitelerinde ve uygulamalarında gizlilik tercihlerinizi nasıl ayarlayabileceğinizi anlamak için gizlilik politikalarını gözden geçirmenizi öneririz.\n</string>
+    <string name="gdpr_seven_title">7. ÜÇÜNCÜ TARAF WEB SİTELERİNDEKİ TUTUMUMUZ NEDİR?</string>
+    <string name="gdpr_seven">Kısacası: Reklam veren ancak web sitelerimize bağlı olmayan üçüncü taraf sağlayıcılarla paylaştığınız bilgilerin güvenliğinden sorumlu değiliz.nUygulamalar bize bağlı olmayan ve diğer web sitelerine, çevrimiçi hizmetlere veya mobil uygulamalara bağlantı olabilecek üçüncü taraflardan gelen reklamlar içerebilir. Üçüncü taraflara sağladığınız verilerin güvenliğini ve gizliliğini garanti edemeyiz. Üçüncü şahıslar tarafından toplanan veriler bu gizlilik bildirimi kapsamında değildir. Uygulamalarla bağlantılı olabilecek diğer web siteleri, hizmetler veya uygulamalar da dahil olmak üzere, üçüncü tarafların içerik veya gizlilik ve güvenlik uygulamalarından ve politikalarından sorumlu değiliz. Bu tür üçüncü tarafların politikalarını gözden geçirmeli ve sorularınızı yanıtlamak için onlarla doğrudan iletişime geçmelisiniz.\n</string>
+    <string name="gdpr_eight_title">8. BİLGILERİNİZİ NE KADAR SÜREYLE SAKLARIZ?</string>
+    <string name="gdpr_eight">Kısacası: Bilgilerinizi, yasalarca aksi belirtilmedikçe, bu gizlilik bildiriminde belirtilen amaçları yerine getirmek için gerekli olduğu sürece bilgilerinizi saklarız.nKişisel bilgilerinizi yalnızca bu gizlilik bildiriminde belirtilen amaçlar için gerekli olduğu sürece saklarız, yasalarca daha uzun bir saklama süresi gerekmedikçe veya izin verilmedikçe (vergi, muhasebe veya diğer yasal gereklilikler gibi). Bu politikadaki hiçbir amaç, kişisel bilgilerinizi kullanıcının hesabının boşta kalma süresinin başlamasından 2 yıldan uzun bir süre önce tutmamızı gerektirmez.n Kişisel bilgilerinizi işlemek için devam eden yasal bir işimiz olmadığında, kişisel bilgilerinizi siler veya anonimleştiririz, ya da bu mümkün değilse (örneğin, kişisel bilgileriniz yedek arşivlerde depolandığı için), o zaman kişisel bilgilerinizi güvenli bir şekilde saklarız ve daha fazla işlem yapılana kadar herhangi bir işlemden izole edeceğiz.</string>
+    <string name="gdpr_nine_title">9. BİLGİLERİNİZİ NASIL GÜVENDE TUTABİLİRİZ?</string>
+    <string name="gdpr_nine">Kısacası: Kişisel bilgilerinizi, işlettiğimiz her türlü kişisel bilginin güvenliğini korumak için tasarlanmış uygun teknik ve organizasyonel güvenlik önlemleri bir sistem le korumayı amaçlıyoruz. Ancak, internetin kendisinin %100 güvenli olduğunu garanti edemediğimizi de unutmayın. Kişisel bilgilerinizi korumak için elimizden geleni yapsak da, kişisel bilgilerin Uygulamalarımıza ve Uygulamalarımıza iletilmesi sizin için risk altındadır. Hizmetlere yalnızca güvenli bir ortamda erişmelisiniz.n</string>
+    <string name="gdpr_ten_title">10. GİZLİLİK HAKLARINIZ NELERDİR?</string>
+    <string name="gdpr_ten">
+Kısacası: Avrupa Ekonomik Alanı gibi bazı bölgelerde, kişisel bilgilerinize daha fazla erişmenizi ve bunlar üzerinde denetim edebilmenizi sağlayan haklara sahipsiniz. Hesabınızı istediğiniz zaman gözden geçirebilir, değiştirebilir veya sonlandırabilirsiniz.
+Bazı bölgelerde (Avrupa Ekonomik Alanı gibi), geçerli veri koruma yasaları uyarınca belirli haklara sahipsiniz. Bunlar yanısıra: \n\n(i) kişisel bilgilerinizin bir kopyasının erişim talebinde bulunma ve bir kopyasını alma, \n(ii) düzeltme veya silme talebi yer alabilir; \n(iii) kişisel bilgilerinizin işlenmesini kısıtlamak için; ve \n(iv) varsa, veri taşınabilirliği için. Bazı durumlarda, kişisel bilgilerinizin işlenmesine itiraz etme hakkına da sahip olabilirsiniz. \nBöyle bir istekte bulunmak için lütfen aşağıda verilen iletişim bilgilerini kullanın. Yürürlükteki veri koruma yasalarına uygun olarak herhangi bir talebi değerlendirecek ve bu yasalara göre hareket edeceğiz.
+Kişisel bilgilerinizi işleme izninize güveniyorsak, istediğiniz zaman onayınızı geri çekme hakkına sahipsiniz. Ancak, bunun geri çekilmeden önce işlemin yasallığını etkilemeyeceğini lütfen unutmayın.
+Avrupa Ekonomik Alanı\'nda ikamet ediyorsanız ve kişisel bilgilerinizi yasadışı olarak işlediğimizi düşünüyorsanız, yerel veri koruma denetleme kurumunuza da şikayette bulunabilirsiniz. İletişim bilgilerini burada bulabilirsiniz: n http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.html.\n
+Hesap Bilgileri \n\n
+Hesabınızdaki bilgileri gözden geçirmek veya değiştirmek veya hesabınızı sonlandırmak isterseniz, şunları yapabilirsiniz: \n\n
+■ Hesap ayarlarınıza giriş yapın ve kullanıcı hesabınızı güncelleyin. \n
+Hesabınızı sonlandırma isteğiniz üzerine, hesabınızı ve bilgilerinizi etkin veritabanlarımızdan devre dışı bırakır veya sileriz. Ancak, dolandırıcılığı önlemek, sorunları gidermek, herhangi bir soruşturmaya yardımcı olmak, Kullanım Koşullarımızı uygulamak ve/veya yasal gerekliliklere uymak için dosyalarımızda bazı bilgiler saklanabilir.\n
+E-posta pazarlamasını devre dışı bırakma: Gönderdiğimiz e-postalardaki abonelikten çıkma linkine tıklayarak veya aşağıda verilen bilgileri kullanarak bizimle iletişime geçerek pazarlama e-posta listemizden istediğiniz zaman aboneliğinizi iptal edebilirsiniz. Daha sonra pazarlama e-posta listesinden kaldırılacak – ancak, yine de yönetim ve hesabınızın kullanımı için gerekli olan hizmet ile ilgili e-postalar göndermek gerekir. Aksi takdirde devre dışı bırakmak için şunları yapabilir: \n
+■ Siteye bir hesap kaydederken tercihlerinize dikkat edin. \n
+■ Hesap ayarlarınıza erişin ve tercihlerinizi güncelleyin. \n</string>
+    <string name="gdpr_eleven_title">11. İZLEMEME ÖZELLİKLERİ İÇİN DENETİMLER</string>
+    <string name="gdpr_eleven">Çoğu web tarayıcısı ve bazı mobil işletim sistemleri ve mobil uygulamalar, çevrimiçi tarama faaliyetlerinizlenin ve toplanan verilerin izlenmemesi ve toplanması için gizlilik tercihinizi bildirmek için etkinleştirebileceğiniz bir İzleme Yapma özelliği veya ayar içerir. DNT sinyallerini tanımak ve uygulamak için tek tip teknoloji standardı tamamlanmamıştır. Bu nedenle, şu anda DNT tarayıcı sinyallerine veya çevrimiçi olarak izlenmemek için seçiminizi otomatik olarak ileten başka bir mekanizmaya yanıt vermiyoruz. Gelecekte izlememiz gereken çevrimiçi izleme standardı benimserse, bu gizlilik bildiriminin gözden geçirilmiş bir sürümünde sizi bu uygulama hakkında bilgilendirisin.\n</string>
+    <string name="gdpr_twelve_title">12. KALIFORNIYA\'DA YAŞAYANLARIN ÖZEL GİZLİLİK HAKLARI VAR MI?</string>
+    <string name="gdpr_twelve">Kısacası: Evet, Kaliforniya\'da ikamet ediyorsanız, kişisel bilgilerinize erişimle ilgili olarak size özel haklar verilir.nCalifornia Medeni Kanunu Bölüm 1798.83, "Işığı Parlatmak" yasası olarak da bilinen, Kaliforniya\'da yaşayan kullanıcılarımızın bizden yılda bir kez ve ücretsiz olarak, kişisel bilgi kategorileri hakkında bilgi (varsa) doğrudan pazarlama amacıyla üçüncü taraflara ifşa ettiğimiz bilgileri ve bir önceki takvimde kişisel bilgileri paylaştığımız tüm üçüncü tarafların ad ve adreslerini talep etmelerine izin verir. Kaliforniya\'da ikamet ediyorsanız ve böyle bir talepte bulunmak istiyorsanız, lütfen aşağıdaki iletişim bilgilerini kullanarak talebinizi bize yazılı olarak gönderin.n 18 yaşın altındaysanız, Kaliforniya\'da ikamet ediyorsanız ve HiMe\'ta kayıtlı bir hesabınız varsa, Uygulamalar\'da herkese açık olarak yayınladığınız istenmeyen verilerin kaldırılmasını talep etme hakkına sahipsiniz. Bu tür verilerin kaldırılmasını talep etmek için, lütfen aşağıda verilen iletişim bilgilerini kullanarak bizimle iletişime geçin ve hesabınızla ilişkili e-posta adresini ve Kaliforniya\'da ikamet ettiğinize dair bir bildirimi ekleyin. Verilerin Uygulamalar\'da herkese açık olarak görüntülenmediğinden emin olacağız, ancak verilerin sistemlerimizden tamamen veya kapsamlı bir şekilde kaldırılmayabileceğini lütfen unutmayın.n    </string>
+    <string name="gdpr_thirteen_title">13. BU POLİTİKADA GÜNCELLEMELER YAPILIYOR MU?</string>
+    <string name="gdpr_thirteen">Kısacası: Evet, ilgili yasalara uygun kalmak için bu politikayı gerekli olduğu şekilde güncelleriz.nBu gizlilik bildirimini zaman zaman güncelleyebiliriz. Güncelleştirilmiş sürüm güncelleştirilmiş bir" Gözden Geçirilmiş" tarihle gösterilir ve güncelleştirilmiş sürüm erişilebilir olduğu anda geçerli olacaktır. Bu gizlilik bildiriminde önemli değişiklikler yaparsak, bu tür değişikliklerle ilgili bir bildirim yayınlayarak veya doğrudan size bir bildirim göndererek sizi bilgilendirebiliriz. Bilgilerinizi nasıl koruduğumuz hakkında bilgi sahibi olmak için bu gizlilik bildirimini sık sık incelemenizi öneririz.\n</string>
+    <string name="gdpr_fourteen_title">14. BU POLİTİKA HAKKINDA BİZİMLE NASIL İLETİŞİM KURABİLİRSİNİZ?</string>
+    <string name="gdpr_fourteen">Bu politika yla ilgili sorularınız veya yorumlarınız varsa, bize himehuawei@gmail.com veya posta yoluyla şu adrese e-posta gönderebilirsiniz: \n\n\nHiMe Takımı \n\n\nonurcan.keskin@huawei.com \n\n neslihan.metin@huawei.com\n</string>
+    <string name="gdpr_title">GİZLİLİK DUYURUSU</string>
+    <string name="gdpr_date">Son güncelleme 10 Mart 2020</string>
+    <string name="user_consent">Kullanıcı İzin Metni (Test)</string>
+    <string name="logo">logo</string>
+    <string name="splash_rights">rights</string>
+
+    <!-- Single Posted Card -->
+    <string name="follower">Takipçi</string>
+    <string name="interest">İlgi Alanları</string>
+    <string name="message">Mesaj</string>
+    <string name="postedBy">Paylaşan <b>%1$s</b></string>
+    <string name="postedBy_me">Paylaşan <b>%1$s</b> (Ben)</string>
+
+    <!-- LoginActivity -->
+    <string name="email">E-Posta</string>
+    <string name="password">Şifre</string>
+    <string name="rememberMe">Beni Hatırla</string>
+    <string name="register">Hemen Kayıt Ol</string>
+    <string name="or">veya</string>
+    <string name="login">Giriş</string>
+    <string name="arrow">Ok</string>
+    <string name="prompt_check">Devam etmek için lütfen kutuyu işaretleyin.</string>
+    <string name="action_continue">Devam</string>
+
+    <!-- MainActivity -->
+    <string name="nav_map">Harita</string>
+    <string name="nav_add">Ekle</string>
+    <string name="nav_activity">Aktivite</string>
+    <string name="nav_galley">Galeri</string>
+    <string name="nav_mail_inbox">Gelen Kutusu</string>
+    <string name="main_hello">Merhaba</string>
+    <string name="hi_status">Merhaba, ben senin durumunum. İstersen beni değiştirebilirsin.</string>
+    <string name="friend">Merhaba dostum!</string>
+    <string name="frag_discover">KEŞFET</string>
+    <string name="frag_fresh">YENİLER</string>
+    <string name="frag_trend">TREND</string>
+    <string name="nav_party">Parti</string>
+    <string name="nav_location">Konum</string>
+    <string name="interest_card_image">İlgi Alanı Kartı Resmi</string>
+
+    <!-- InterestsActivity -->
+    <string name="interests_message">Hoş geldin, bize kendinden bahset.</string>
+    <string name="action_next">Sonraki</string>
+    <string name="name_surname">İsim &amp; Soyisim veya Kullanıcı Adı</string>
+    <string name="interest_age">Lütfen yaş aralığınızı seçiniz</string>
+    <string name="image">Resim</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="nav_home">Anasayfa</string>
+    <string name="share">Paylaş</string>
+    <string name="follow">Takip Et</string>
+    <string name="himeUser">HiMe Kullanıcısı</string>
+    <string name="me"><bi>%1$s</bi> (Ben)</string>
+    <string name="type_a_message_here">Mesajınızı buraya yazın…</string>
+    <string name="type_a_comment_here">Yorumlarınızı yazın…</string>
+    <string name="shared_gallery">Paylaşılan Galeri</string>
+    <string name="location_tag">Konum Etiketi</string>
+    <string name="shared_pictures">Paylaşılan Resimler</string>
+    <string name="shared_activities">Paylaşılan Etkinlikler</string>
+    <string name="lovely">Kalp</string>
+    <string name="timestamp">00:00</string>
+    <string name="livefocus">Odak</string>
+    <string name="livetorch">Flaş</string>
+    <string name="liveflip">Döndür</string>
+    <string name="livecamera">Fotoğraf Çek</string>
+    <string name="master_follow">Takip</string>
+    <string name="inter_music">Muzik</string>
+    <string name="nav_livestream">Canlı Yayın</string>
+    <string name="nav_travel">Seyahat</string>
+    <string name="set_live_stream_title">Canlı Akış Başlığını Ayarla</string>
+    <string name="save_title">Başlığı Kaydet</string>
+
+    <string name="smile">Gülümse :)</string>
+    <string name="nav_events">Etkinlik</string>
+    <string name="txt_hash">#etiket</string>
+    <string name="play_pause">Oynat / Duraklatma</string>
+    <string name="app_version">versiyon</string>
+    <string name="settings">Ayarlar</string>
+    <string name="settings_language">Dil</string>
+    <string name="lang_turkish">Türkçe</string>
+    <string name="lang_english">İngilizce</string>
+    <string name="day_night_mode">Gündüz / Gece Modu</string>
+    <string name="day">Gündüz</string>
+    <string name="error_lang_already_selected">Geçerli dil zaten tercihlerinize göre ayarlıdır.</string>
+    <string name="memory">Hakkımda</string>
+    <string name="error_max_fields">Maximum Alanlar\'a dikkat et!</string>
+    <string name="prompt_save_success">Başarıyla Kaydedildi</string>
+    <string name="action_record_video">Video Kaydet</string>
+    <string name="action_choose_gallery">Galeriden Seçin</string>
+    <string name="card_gallery">Galeri</string>
+    <string name="card_event">Etkinlik</string>
+    <string name="card_travel">Seyahat</string>
+    <string name="statOnline">Çevrimiçi</string>
+
+    <string name="post_settings_post_to">Diğer uygulamalara gönderin…</string>
+    <string name="post_settings_edit">Düzenle</string>
+    <string name="post_settings_delete">Sil</string>
+    <string name="post_settings_hide">Zaman çizelgesinde gizle</string>
+    <string name="post_footer">Bize düşüncelerinizi söyleyin</string>
+    <string name="post_tag">Etiket</string>
+    <string name="click_map">Konumlar için harita ile etkileşim kurun.</string>
+    <string name="error_location_pick">Lütfen haritadan bir konum seçin.</string>
+    <string name="error_travel_upload">Yükleme sırasında hata oluştu! Lütfen tekrar deneyin.</string>
+    <string name="live_stream">Canlı Yayın</string>
+    <string name="pick_photo">Fotoğraf Seçin</string>
+    <string name="start">BAŞLA</string>
+    <string name="take_photo">Fotoğraf Çek</string>
+    <string name="live_capture_video">Video Çek</string>
+    <string name="frag_find_hime_rs">HIME\'LİLERİ BUL</string>
+    <string name="followed_hime_rs">Takip Edilen HiMe\'liler</string>
+    <string name="error_maximum_five">Maksimum </string>
+    <string name="pick_photos_from_gallery">Galeriden Fotoğraf Seç</string>
+    <string name="remove">Kaldır</string>
+    <string name="following">Takip Edilenler</string>
+    <string name="followers">Takip Edenler</string>
+    <string name="num_of_following">Takip Ettikleriniz: <b>%1$s</b></string>
+    <string name="num_of_followers">Takip Edenler: <b>%1$s</b></string>
+    <string name="no_one_is_following_you">Kimse takip etmiyor!</string>
+    <string name="you_are_following_no_one">Kimseyi takip etmiyor!</string>
+    <string name="mapHolder">MapHolder</string>
+    <string name="status">Durum</string>
+    <string name="chat_between">Sohbet:</string>
+    <string name="whats_on_your_mind">Aklından ne geçiyor?</string>
+    <string name="himerights">Tüm hakları saklıdır. HiMe&#174;\n202_ 202_</string>
+    <string name="error_pickInt">Lütfen en az 1 İlgi Alanı seçin</string>
+    <string name="app_settings">Uygulama Ayarları</string>
+    <string name="user_settings">Kullanıcı Ayarları</string>
+    <string name="post_settings_show">Zaman çizelgesinde göster</string>
+    <string name="make_prof">Profil resmi olarak ayarla</string>
+    <string name="tag">Etiket</string>
+    <string name="reply">Yorum Yap</string>
+    <string name="view_replies">Yorumları Görüntüle</string>
+    <string name="comments">Yorum</string>
+    <string name="post_settings_commentable">Yorumlara Açık</string>
+    <string name="post_settings_no_commentable">Yorumlara Kapalı</string>
+    <string name="post_closed_comment">Gönderi Yorumlara Kapalı</string>
+    <string name="your_age_interval">Yaş aralığınız</string>
+
+    <!-- Age Spinner -->
+    <string-array name="ageSpinner">
+        <item>5 – 10</item>
+        <item>11 – 20</item>
+        <item>21 – 30</item>
+        <item>31 – 40</item>
+        <item>41 – 50</item>
+        <item>51 – 60</item>
+        <item>61 – Üstü</item>
+    </string-array>
+
+    <string name="night">Gece</string>
+    <string name="prof_profile">Profile Fotoğrafları</string>
+    <string name="prof_photo">Fotoğraflar</string>
+    <string name="prof_video">Videolar</string>
+    <string name="show_on_map">Haritada göster</string>
+    <string name="item_message">Mesaj</string>
+    <string name="num_of_item_message"><b>%1$s</b> Mesaj</string>
+    <string name="add_photos">Fotoğraf Ekle</string>
+    <string name="add_profile_pictures">Profil Fotoğrafı Ekle</string>
+    <string name="prof_saved">Profil fotoğrafınız değiştirildi.</string>
+    <string name="views">izlenme</string>
+    <string name="stop">Durdur</string>
+    <string name="offline">Çevrimdışı</string>
+    <string name="online">Çevrimiçi</string>
+    <string name="minute_ago">Dakika önce</string>
+    <string name="yesterday">Dün</string>
+    <string name="just_now">Biraz önce</string>
+    <string name="an_hour_ago">Bir saat önce</string>
+    <string name="profile_privacy">Profil Gizliliği</string>
+    <string name="hideprof">Profilimi Gizle</string>
+    <string name="show_message">Mesaj almak istiyorum</string>
+    <string name="hide_message">Mesaj almak istemiyorum</string>
+    <string name="show_memory">Diğerlerinin hakkımda kısmını görmesini istiyorum</string>
+    <string name="hide_memory">Diğerlerinin hakkımda kısmını görmesini istemiyorum</string>
+    <string name="show_shares">Diğerlerinin paylaşımlarını görmesini istiyorum</string>
+    <string name="hide_shares">Diğerlerinin paylaşımlarını görmesini istemiyorum</string>
+    <string name="show_followers">Diğerlerinin takipçilerimi / takip ettiklerimi görmesini istiyorum</string>
+    <string name="hide_followers">Diğerlerinin takipçilerimi / takip ettiklerimi görmesini istemiyorum</string>
+    <string name="post_settings_setas">Profil resmi olarak ayarla</string>
+    <string name="post_action_posting_to">Başka uygulamalarda paylaş…</string>
+    <string name="post_action_editing">Paylaşım düzenleniyor</string>
+    <string name="post_action_deleting">Paylaşım siliniyor</string>
+    <string name="post_action_showing">Paylaşım zaman tünelinde gösteriliyor</string>
+    <string name="post_action_hiding">Paylaşım gizleniyor</string>
+    <string name="post_action_settingas">Profil resmi olarak ayarlanıyor</string>
+    <string name="post_action_opening_to_comments">Paylaşım yorumlara açılıyor</string>
+    <string name="post_action_closing_to_comments">Paylaşım yorumlara kapanıyor</string>
+    <string name="editPost">Paylaşımı düzele</string>
+    <string name="error_hq_video">Video modunda HQ fotoğraf çekemezsiniz</string>
+    <string name="error_hq_camera">Kamera modunda HQ video kayıt edemezsiniz</string>
+    <string name="filter">Filtre</string>
+    <string name="switch_camera">Kamerayı döndür</string>
+    <string name="action_stop_following">Takibi bırak</string>
+    <string name="post">paylaşım</string>
+    <string name="posts">Paylaşımlar</string>
+    <string name="proceed">Deveam et</string>
+    <string name="unfollow">Takibi bırak</string>
+    <string name="action_unfollow_main"><b>%1$s</b> takibini bırakmak ister misin?</string>
+    <string name="action_no_keep_as_follower">Hayır, takibe devam et.</string>
+    <string name="action_yes_remove_following">Evet, takibi bırak.</string>
+    <string name="no">Hayır, paylaşımı silme.</string>
+    <string name="yes">Evet, paylaşımı sil.</string>
+    <string name="delete_note">(Paylaşım aynı zamanda zaman tünelinden de silinir.)</string>
+    <string name="cancel">İptal</string>
+    <string name="delete_confirm">Bu paylaşımı silmek istiyor musun?</string>
+    <string name="tooltip_error_posts_p2">gizlidir.</string>
+    <string name="tooltip_error_posts_p1">Paylaşımı</string>
+    <string name="tooltip_info_take_a_peek">Profiline göz at.</string>
+    <string name="tooltip_error_see_following_p1">Kimi takip ettiğini</string>
+    <string name="tooltip_error_see_following_p2">göremezsiniz.</string>
+    <string name="add_tags">Etiket ekle</string>
+    <string name="results_found">sonuç bulundu</string>
+    <string name="search_places">Yerler</string>
+    <string name="search_accounts">Kişiler</string>
+    <string name="search_hastags">hashtag\'ler</string>
+    <string name="search">Ara</string>
+    <string name="places">Yerler</string>
+    <string name="account">Kişi</string>
+    <string name="end_tuto">Tanıtımı bitir</string>
+    <string name="skip">Geç</string>
+    <string name="tabs">Sekme</string>
+    <string name="write_a_caption">Bir başlık yazın…</string>
+    <string name="tooltip_error_send_message">"Bu kişiye mesaj gönderemezsiniz: "</string>
+    <string name="tooltip_error_see_memo">"Bu kişinin Duvar'ını göremezsiniz: "</string>
+    <string name="tooltip_info_like_given">"Bu kişiye zaten Lovely verdiniz: "</string>
+    <string name="tooltip_error_see_followers">"Bu kişinin takipçilerini göremezsiniz: "</string>
+    <string name="tooltip_error_video">"Bu kişinin galerisini göremezsiniz: "</string>
+    <string name="tooltip_error_event">"Bu kişinin etkinliklerini göremezsiniz: "</string>
+    <string name="tooltip_error_travel">"Bu kişiye ait seyehat paylaşımlarını göremezsiniz: "</string>
+    <string name="start_date">Başlangıç Tarihi</string>
+    <string name="end_date">Bitiş Tarihi</string>
+    <string name="clear">Temizle</string>
+    <string name="save">Kaydet</string>
+    <string name="error_no_message_found">Mesaj geçmişi bulunamadı!</string>
+    <string name="no_calendar_selection">Bu Etkinlik için tarih seçilmedi!</string>
+    <string name="mode_switch">Mod değiştir</string>
+    <string name="detect_language">dili algıla</string>
+    <string name="fullscreen">tam ekran</string>
+    <string name="border">kenar</string>
+    <string name="calendar">Takvim</string>
+    <string name="caption">Başlık</string>
+    <string name="replies">Yorum</string>
+    <string name="num_of_replies"><b>%1$s</b> Yorum</string>
+    <string name="add_cover">Kapak Resmi Ekle</string>
+    <string name="error_empty_caption">Lütfen etkinlik için başlık kısmını doldurun.</string>
+    <string name="coverphoto">kapakFotoğrafı</string>
+    <string name="Post">Paylaşım</string>
+    <string name="Follower">Takipçi</string>
+    <string name="tuto_main_banner">Profil Resminizle etkileşim kurarak kendi kişiselleştirilebilir Profil Sayfanızı ziyaret edebilirsiniz.</string>
+    <string name="tuto_main_find">HiMe\'lileri bul, uygulamamıza kayıtlı tüm kullanıcıları gösterecektir. Profilleri özel değilse, profil sayfalarına bakabilir, paylaşımlarını görebilir ve hatta onlarla sohbet etmeye başlayabilirsiniz.</string>
+    <string name="tuto_main_trending_h">Ana Sayfa ile Trend Olanlar, ilgi alanlarınıza göre popüler Resim gönderilerini görüntüler.</string>
+    <string name="tuto_main_trending_t">Seyahat ile Trend Olanlar, ilgi alanlarınız ne olursa olsun popüler Seyehat gönderilerini görüntüler.</string>
+    <string name="tuto_main_trending_e">Etkinliklerle Trend Olanlar, ilgi alanlarınıza bakılmaksızın popüler Etkinlik gönderilerini görüntüler.</string>
+    <string name="tuto_main_trending_g">Galeri ile Trend Olanlar, ilgi alanlarınıza bakılmaksızın popüler Video gönderilerini görüntüler.</string>
+    <string name="tuto_main_fresh_h">Yeniler ile Anasayfa, ilgi alanlarınız ne olursa olsun günlük olan Resim gönderilerini görüntüler.</string>
+    <string name="tuto_main_fresh_t">Yeniler ile Seyehat, ilgi alanlarınız ne olursa olsun günlük Harita gönderilerini görüntüler.</string>
+    <string name="tuto_main_fresh_e">Etkinlikler ile Keşfet, yalnızca ilgi alanlarınıza göre Etkinlik gönderilerini görüntüler.</string>
+    <string name="tuto_main_fresh_g">Galeri ile Keşfet, yalnızca ilgi alanlarınıza göre Video gönderilerini görüntüler.</string>
+    <string name="tuto_main_discover_h">Ana Sayfa ile Keşfet, yalnızca ilgi alanlarınıza göre Resim gönderilerini görüntüler.</string>
+    <string name="tuto_main_discover_t">Seyahat ile Keşfet, yalnızca ilgi alanlarınıza göre Harita gönderilerini görüntüler.</string>
+    <string name="tuto_main_discover_e">Etkinliklerle Keşfet, yalnızca ilgi alanlarınıza göre Etkinlik gönderilerini görüntüler.</string>
+    <string name="tuto_main_discover_g">Galeri ile Keşfet, yalnızca ilgi alanlarınıza göre Video gönderilerini görüntüler.</string>
+    <string name="tuto_main_live">Canlı Yayından - Fotoğraf çekebilirsiniz - Video çekebilirsiniz - Galerinizden resim seçebilir - Canlı Yayınları küresel olarak başlatabilirsiniz. (yakında)</string>
+
+    <!-- Latest Added Are Below Here. FIX THEM -->
+    <!-- Generated by Automatic String Resource Translation -->
+</resources>

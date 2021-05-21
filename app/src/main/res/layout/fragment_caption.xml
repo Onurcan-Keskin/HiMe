@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/darkerBackground"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.CaptionFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/captionAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/darkerBackground"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/captionToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/darkerBackground"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/CalendarToolbarTheme"
+            app:titleTextColor="?attr/almondBorder" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="76dp"
+            android:background="?attr/backgroundColour"
+            android:scrollbarThumbHorizontal="@color/colorAlmondLight">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/captionInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/backgroundColour"
+                    android:hint="@string/write_a_caption"
+                    android:textColorHint="@color/red"
+                    app:counterEnabled="true"
+                    app:errorEnabled="true"
+                    app:errorTextColor="@android:color/holo_purple"
+                    app:counterTextColor="?attr/almondBorder"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true"
+                    app:hintTextColor="@color/red">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/captionEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/backgroundColour"
+                        android:fontFamily="@font/alegreya_sans_medium"
+                        android:textColor="?attr/tintColour" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?attr/backgroundColour"
+                        android:hint="@string/tag"
+                        android:textColorHint="@color/red"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="20"
+                        app:counterTextColor="?attr/almondBorder"
+                        app:errorEnabled="true"
+                        app:errorTextColor="@color/red"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/red">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tag1EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/backgroundColour"
+                            android:fontFamily="@font/alegreya_sans_medium"
+                            android:textColor="@color/colorAccent" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?attr/backgroundColour"
+                        android:hint="@string/tag"
+                        android:textColorHint="@color/red"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="20"
+                        app:counterTextColor="?attr/almondBorder"
+                        app:errorEnabled="true"
+                        app:errorTextColor="@color/red"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/red">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tag2EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/backgroundColour"
+                            android:fontFamily="@font/alegreya_sans_medium"
+                            android:textColor="@color/colorAccent" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?attr/backgroundColour"
+                        android:hint="@string/tag"
+                        android:textColorHint="@color/red"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="20"
+                        app:counterTextColor="?attr/almondBorder"
+                        app:errorEnabled="true"
+                        app:errorTextColor="@color/red"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/red">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tag3EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/backgroundColour"
+                            android:fontFamily="@font/alegreya_sans_medium"
+                            android:textColor="@color/colorAccent" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?attr/backgroundColour"
+                        android:hint="@string/tag"
+                        android:textColorHint="@color/red"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="20"
+                        app:counterTextColor="?attr/almondBorder"
+                        app:errorEnabled="true"
+                        app:errorTextColor="@color/red"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/red">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tag4EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/backgroundColour"
+                            android:fontFamily="@font/alegreya_sans_medium"
+                            android:textColor="@color/colorAccent" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/backgroundColour"
+                    android:hint="@string/tag"
+                    android:textColorHint="@color/red"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20"
+                    app:counterTextColor="?attr/almondBorder"
+                    app:errorEnabled="true"
+                    app:errorTextColor="@color/red"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true"
+                    app:hintTextColor="@color/red">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tag5EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/backgroundColour"
+                        android:fontFamily="@font/alegreya_sans_medium"
+                        android:textColor="@color/colorAccent" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <GridView
+                    android:id="@+id/captionInterestGrd"
+                    android:layout_width="match_parent"
+                    android:layout_height="330dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="76dp"
+                    android:fitsSystemWindows="true"
+                    android:horizontalSpacing="10dp"
+                    android:listSelector="@drawable/round_ripple"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp"
+                    tools:listitem="@layout/single_interests_card" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:layout_gravity="bottom"
+            android:background="?attr/backgroundColour"
+            android:elevation="10dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/captionSaveButton"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="?attr/foregroundColour"
+                android:text="@string/save"
+                android:textColor="@color/red"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+</LinearLayout>

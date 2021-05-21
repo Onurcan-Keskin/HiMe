@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/darkerBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:selectableItemBackground"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".7">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/follower_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/ic_hexagon"
+            android:backgroundTint="?attr/almondPurple"
+            android:padding="8dp"
+            android:src="@drawable/splachback"
+            app:civ_border_color="?attr/almondBorder"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/follower_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/follower_img"
+            android:fontFamily="@font/bicubik"
+            android:text="@string/name"
+            android:textColor="?attr/almondPurple"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/follower_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/follower_name"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/follower_img"
+            android:drawableStart="@drawable/ic_birthday_cake"
+            android:drawableTint="?attr/almondBorder"
+            android:gravity="center_vertical"
+            android:text="@string/zero"
+            android:textColor="?attr/tintColour"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/follower_lovely"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/follower_age"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/follower_img"
+            android:drawableStart="@drawable/ic_lovelyicon"
+            android:drawableTint="?attr/almondBorder"
+            android:gravity="center_vertical"
+            android:text="@string/zero"
+            android:textColor="?attr/tintColour" />
+
+        <TextView
+            android:id="@+id/follower_following_since"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/follower_lovely"
+            android:layout_marginStart="@dimen/follower_margin"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/follower_img"
+            android:drawableStart="@drawable/ic_following"
+            android:drawableTint="?attr/almondBorder"
+            android:gravity="center_vertical"
+            android:text="@string/timestamp"
+            android:textColor="?attr/tintColour" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/remove_follower"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight=".3"
+        android:background="@drawable/ic_rectangle_almond"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/aldrich"
+        android:textSize="12sp"
+        android:foreground="?android:selectableItemBackground"
+        android:text="@string/remove"
+        android:textColor="@color/colorPureWhite"
+        android:textStyle="bold" />
+
+</LinearLayout>

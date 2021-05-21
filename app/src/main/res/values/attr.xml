@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="backgroundColour" format="color" />
+    <attr name="darkerBackground" format="color"/>
+    <attr name="foregroundColour" format="color" />
+    <attr name="cardBackgroundColour" format="color" />
+    <attr name="cardForeGroundColour" format="color" />
+    <attr name="textColour" format="color" />
+    <attr name="tintColour" format="color" />
+    <attr name="tintPurple" format="color" />
+    <attr name="borderColor" format="color" />
+    <attr name="tintGlitter" format="color" />
+    <attr name="tintRevers" format="color" />
+    <attr name="senderColor" format="color" />
+    <attr name="receiveColor" format="color" />
+    <attr name="almondBorder" format="color" />
+    <attr name="almondPurple" format="color" />
+    <attr name="bottomText" format="color" />
+    <attr name="bottomLine" format="color" />
+    <attr name="content_fade" format="color"/>
+
+    <declare-styleable name="CardSlider">
+        <!-- Active card offset from start of RecyclerView. Default value is 50dp. -->
+        <attr name="activeCardLeftOffset" format="dimension" />
+        <!-- Card width. Default value is 148dp. -->
+        <attr name="cardWidth" format="dimension" />
+        <!-- Distance between cards. Default value is 12dp. -->
+        <attr name="cardsGap" format="dimension" />
+        <!-- ViewUpdater implementation class. If not set, DefaultViewUpdater class is used. -->
+        <attr name="viewUpdater" format="string" />
+    </declare-styleable>
+</resources>

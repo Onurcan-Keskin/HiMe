@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundLight"
+    tools:context=".ui.activities.LiveChatStreamaxiaActivity">
+
+    <nl.joery.animatedbottombar.AnimatedBottomBar
+        android:id="@+id/main_bottom_app_bar"
+        style="@style/Widget.MaterialComponents.BottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/transparent"
+        android:visibility="visible"
+        app:abb_indicatorAppearance="round"
+        app:abb_indicatorColor="@color/colorPureWhite"
+        app:abb_indicatorLocation="bottom"
+        app:abb_rippleColor="@color/colorPurpleFade"
+        app:abb_rippleEnabled="true"
+        app:abb_selectedIndex="1"
+        app:abb_selectedTabType="text"
+        app:abb_tabAnimation="slide"
+        app:abb_tabColor="@color/colorPureWhite"
+        app:abb_tabColorSelected="@color/colorPureWhite"
+        app:abb_tabs="@menu/bottom_live_items"
+        app:abb_textStyle="bold"
+        app:hideOnScroll="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/live_photo"
+        android:icon="@drawable/ic_camera_24dp"
+        android:menuCategory="system"
+        android:title="@string/livecamera"
+        app:showAsAction="always" />
+
+    <item
+        android:icon="@drawable/ic_video_camera"
+        android:menuCategory="system"
+        android:title="@string/live_capture_video"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/live_gallery"
+        android:icon="@drawable/ic_gallery"
+        android:menuCategory="system"
+        android:title="@string/pick_photo"
+        app:showAsAction="always" />
+
+    <!--    <item-->
+    <!--        android:id="@+id/live_live_chat"-->
+    <!--        android:icon="@drawable/ic_shutter"-->
+    <!--        android:menuCategory="system"-->
+    <!--        android:title="@string/live_stream"-->
+    <!--        app:showAsAction="always" />-->
+</menu>

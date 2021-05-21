@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/eventAdderConstraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/darkerBackground"
+    tools:context=".ui.activities.EventAdderActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            android:visibility="gone">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/homeToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <FrameLayout
+            android:id="@+id/eventFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/appBarLayout">
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="4.3">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/calendarViewCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    app:cardBackgroundColor="?attr/backgroundColour"
+                    app:cardCornerRadius="3dp"
+                    app:strokeColor="?attr/almondBorder"
+                    app:strokeWidth="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:contentDescription="@string/border"
+                            android:src="@drawable/edge2"
+                            app:tint="?attr/almondBorder" />
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:contentDescription="@string/border"
+                            android:rotation="90"
+                            android:src="@drawable/edge2"
+                            app:tint="?attr/almondBorder" />
+
+                        <ImageView
+                            android:layout_width="@dimen/eventAdderPickSize"
+                            android:layout_height="@dimen/eventAdderPickSize"
+                            android:layout_above="@+id/calendarTV"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="0dp"
+                            android:contentDescription="@string/calendar"
+                            android:src="@drawable/ic_calendar"
+                            app:tint="?attr/almondPurple" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/calendarOKLottie"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:elevation="10dp"
+                            android:visibility="invisible"
+                            app:lottie_autoPlay="false"
+                            app:lottie_rawRes="@raw/tick_lottie" />
+
+                        <TextView
+                            android:id="@+id/calendarTV"
+                            style="@style/TextAppearance.AppCompat.Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="48dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_toStartOf="@+id/calendarOKLottie"
+                            android:fontFamily="@font/aldrich"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/calendar"
+                            android:textColor="?attr/almondBorder" />
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/captionViewCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    app:cardBackgroundColor="?attr/backgroundColour"
+                    app:cardCornerRadius="2dp"
+                    app:strokeColor="?attr/almondBorder"
+                    app:strokeWidth="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:contentDescription="@string/border"
+                            android:src="@drawable/edge2"
+                            app:tint="?attr/almondBorder" />
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:contentDescription="@string/border"
+                            android:rotation="90"
+                            android:src="@drawable/edge2"
+                            app:tint="?attr/almondBorder" />
+
+                        <ImageView
+                            android:layout_width="@dimen/eventAdderPickSize"
+                            android:layout_height="@dimen/eventAdderPickSize"
+                            android:layout_above="@+id/captionTV"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="0dp"
+                            android:contentDescription="@string/caption"
+                            android:src="@drawable/ic_caption"
+                            app:tint="?attr/almondPurple" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/captionOKLottie"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:elevation="10dp"
+                            android:visibility="invisible"
+                            app:lottie_autoPlay="false"
+                            app:lottie_rawRes="@raw/tick_lottie" />
+
+                        <TextView
+                            android:id="@+id/captionTV"
+                            style="@style/TextAppearance.AppCompat.Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="48dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_toStartOf="@+id/captionOKLottie"
+                            android:fontFamily="@font/aldrich"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/caption"
+                            android:textColor="?attr/almondBorder" />
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/galleryViewCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    app:cardBackgroundColor="?attr/backgroundColour"
+                    app:cardCornerRadius="2dp"
+                    app:strokeColor="?attr/almondBorder"
+                    app:strokeWidth="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:contentDescription="@string/border"
+                            android:src="@drawable/edge2"
+                            app:tint="?attr/almondBorder" />
+
+                        <ImageView
+                            android:id="@+id/r"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:contentDescription="@string/border"
+                            android:rotation="90"
+                            android:src="@drawable/edge2"
+                            app:tint="?attr/almondBorder" />
+
+                        <ImageView
+                            android:layout_width="@dimen/eventAdderPickSize"
+                            android:layout_height="@dimen/eventAdderPickSize"
+                            android:layout_above="@+id/galleryTV"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="0dp"
+                            android:contentDescription="@string/card_gallery"
+                            android:src="@drawable/ic_gallery"
+                            app:tint="?attr/almondPurple" />
+
+                        <com.ramotion.circlemenu.CircleMenuView
+                            android:id="@+id/galleryMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:elevation="20dp"
+                            android:visibility="gone"
+                            app:button_colors="@array/colors_event_gallery"
+                            app:button_icons="@array/icons_event_gallery"
+                            app:distance="60dp"
+                            app:icon_color="@color/colorPureWhite"
+                            tools:visibility="visible" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/takeOKLottie"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_above="@+id/coverOKLottie"
+                            android:layout_below="@+id/r"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:elevation="10dp"
+                            android:visibility="invisible"
+                            app:lottie_autoPlay="false"
+                            app:lottie_rawRes="@raw/tick_lottie" />
+
+                        <ImageView
+                            android:id="@+id/cm"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_above="@+id/coverOKLottie"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="58dp"
+                            android:visibility="invisible"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toStartOf="@+id/takeOKLottie"
+                            android:src="@drawable/ic_camera_24dp"
+                            app:tint="?attr/almondBorder" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/coverOKLottie"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:elevation="10dp"
+                            android:visibility="invisible"
+                            app:lottie_autoPlay="false"
+                            app:lottie_rawRes="@raw/tick_lottie" />
+
+                        <ImageView
+                            android:id="@+id/pt"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_below="@+id/cm"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginEnd="0dp"
+                            android:visibility="invisible"
+                            android:layout_toStartOf="@+id/coverOKLottie"
+                            android:src="@drawable/ic_cover_poster"
+                            app:tint="?attr/almondBorder" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/pickOKLottie"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentBottom="true"
+                            android:elevation="10dp"
+                            android:visibility="invisible"
+                            app:lottie_autoPlay="false"
+                            app:lottie_rawRes="@raw/tick_lottie" />
+
+                        <ImageView
+                            android:id="@+id/pk"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_below="@+id/cm"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="0dp"
+                            android:layout_toEndOf="@+id/pickOKLottie"
+                            android:src="@drawable/ic_gallery"
+                            android:visibility="invisible"
+                            app:tint="?attr/almondBorder" />
+
+                        <TextView
+                            android:id="@+id/galleryTV"
+                            style="@style/TextAppearance.AppCompat.Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="48dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_toStartOf="@+id/coverOKLottie"
+                            android:fontFamily="@font/aldrich"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/nav_galley"
+                            android:textColor="?attr/almondBorder" />
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/placesViewCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    app:cardBackgroundColor="?attr/backgroundColour"
+                    app:cardCornerRadius="3dp"
+                    app:strokeColor="?attr/almondBorder"
+                    app:strokeWidth="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:contentDescription="@string/border"
+                            android:src="@drawable/edge2"
+                            app:tint="?attr/almondBorder" />
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:contentDescription="@string/border"
+                            android:rotation="90"
+                            android:src="@drawable/edge2"
+                            app:tint="?attr/almondBorder" />
+
+                        <ImageView
+                            android:layout_width="@dimen/eventAdderPickSize"
+                            android:layout_height="@dimen/eventAdderPickSize"
+                            android:layout_above="@+id/placesTV"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="0dp"
+                            android:contentDescription="@string/places"
+                            android:src="@drawable/ic_current_location"
+                            app:tint="?attr/almondPurple" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/placesOKLottie"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:elevation="10dp"
+                            android:visibility="invisible"
+                            app:lottie_autoPlay="false"
+                            app:lottie_rawRes="@raw/tick_lottie" />
+
+                        <TextView
+                            android:id="@+id/placesTV"
+                            style="@style/TextAppearance.AppCompat.Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="48dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_toStartOf="@+id/placesOKLottie"
+                            android:fontFamily="@font/aldrich"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/places"
+                            android:textColor="?attr/almondBorder" />
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <ImageView
+                    android:id="@+id/save_event"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".3"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:background="?attr/foregroundColour"
+                    android:elevation="5dp"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_save"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    app:tint="@color/colorAlmondLight" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
